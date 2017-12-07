@@ -51,10 +51,10 @@ gulp.task('js', function() {
 });
 
 // fonts
-var fonts = {
-    in: [source + 'fonts/*.*', bootstrapSass.in + 'assets/fonts/**/*'],
-    out: fontsDir
-};
+gulp.task('fonts', function() {
+    return gulp.src(source + 'fonts/**/*')
+        .pipe(gulp.dest('dist/fonts'))
+})
 
 gulp.task('default', function(){
     gulp.watch('src/**', ['sass', 'js', 'fonts'])
