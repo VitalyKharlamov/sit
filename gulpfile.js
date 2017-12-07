@@ -50,7 +50,12 @@ gulp.task('js', function() {
         .pipe(gulp.dest('dist'));
 });
 
+// fonts
+var fonts = {
+    in: [source + 'fonts/*.*', bootstrapSass.in + 'assets/fonts/**/*'],
+    out: fontsDir
+};
+
 gulp.task('default', function(){
-    gulp.watch('src/**', ['sass', 'js'])
-    //gulp.watch('src/**', ['js'])
+    gulp.watch('src/**', ['sass', 'js', 'fonts'])
 });
