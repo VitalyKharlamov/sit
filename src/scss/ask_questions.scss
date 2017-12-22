@@ -1,0 +1,44 @@
+@import "bootstrap-custom";
+@import "variables";
+
+.ask_questions {
+  height: 320px;
+  background-color: #1E1E1E;
+  h3 {
+    margin-left: 79px;
+    margin-right: 78px;
+    margin-top: 123px;
+    color: #FFFFFF;
+    line-height: 37px;
+  }
+  text-align: center;
+}
+
+.ask-form {
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding-top: 43px;
+}
+
+.ask-form-background {
+  background-color: #1E1E1E;
+  border: 1px solid rgba(255,255,255,0.5);
+  max-width: 448px;
+}
+
+.ask-phone {
+  color: rgba(255,255,255,0.5);
+}
+
+.message-margin {
+  margin-top: 27px;
+}
+
+.message-height {
+  height: 96px!important;
+}
+
+.email-height {
+  height: 48px;
+}
