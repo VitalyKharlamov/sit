@@ -1,4 +1,10 @@
+@import "variables";
+
 .second_slide {
+
+  &-left {
+    position: relative;
+  }
 
   &-content {
     padding: {
@@ -31,11 +37,25 @@
   //PHONE
   &-phone {
     padding-top: 96px;
+
     img {
       height: 456px;
       margin-left: 24px;
+      position: absolute;
       width: auto;
     }
   }
 
+}
+
+// This class uses in the software section
+// TODO use only one class for two sections
+.grey_block {
+  min-height: 104px;
+  padding-top: 41px;
+  background: $background--secondary;
+
+  a {
+    font-size: 18px;
+  }
 }
