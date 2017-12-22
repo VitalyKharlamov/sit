@@ -1,44 +1,95 @@
-@import "bootstrap-custom";
 @import "variables";
 
+$contact-section-background: #1E1E1E;
+$contact-section-color: rgba(255,255,255,0.5);
+$contact-section-border: rgba(255, 255, 255, 0.5);
+
 .ask_questions {
-  height: 320px;
-  background-color: #1E1E1E;
+
+  min-height: 320px;
+  background-color: $contact-section-background;
+
   h3 {
-    margin-left: 79px;
-    margin-right: 78px;
     margin-top: 123px;
-    color: #FFFFFF;
+    color: white;
     line-height: 37px;
   }
   text-align: center;
+
+  .ask-form {
+    text-align: left;
+    color: white;
+    font-size: 16px;
+    padding-top: 43px;
+  }
+
+  .ask-form-background {
+    background-color: $contact-section-background;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    max-width: 448px;
+  }
+
+  .ask-phone {
+    color: $contact-section-color;
+  }
+
+  .message-margin {
+    margin-top: 27px;
+  }
+
+  .message-height {
+    height: 96px !important;
+  }
+
+  .email_container {
+    position: relative;
+  }
+
+  .email-height {
+    height: 48px;
+  }
+
 }
 
-.ask-form {
-  text-align: left;
-  color: #FFFFFF;
-  font-size: 16px;
-  padding-top: 43px;
-}
-
-.ask-form-background {
-  background-color: #1E1E1E;
-  border: 1px solid rgba(255,255,255,0.5);
+.contact_form {
+  display: block;
+  margin: 0 auto;
   max-width: 448px;
+  width: 100%;
+
+  label {
+    color: white;
+    padding-left: 8px;
+    font-weight: normal;
+  }
+
+  &-email, &-message {
+    border-radius: 4px;
+    display: block;
+    padding: 8px 16px;
+    width: 100%;
+
+    //&:focus {
+    //  border-color: $color--blue;
+    //}
+  }
+
 }
 
-.ask-phone {
-  color: rgba(255,255,255,0.5);
-}
-
-.message-margin {
-  margin-top: 27px;
-}
-
-.message-height {
-  height: 96px!important;
-}
-
-.email-height {
+.send_button {
+  background: #242424;
+  border: solid $contact-section-border;
+  border-width: 1px 1px 1px 0;
   height: 48px;
+  line-height: 52px;
+  width: 104px;
+  border-radius: 0 4px 4px 0;
+  color: $contact-section-color;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  //&:active {
+  //  background-color: $color--blue;
+  //}
 }

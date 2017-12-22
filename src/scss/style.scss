@@ -10,26 +10,33 @@
 }
 
 .navbar-custom {
-  background-color: transparent!important;
-  border-color: transparent!important;
-  background-image: none!important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  background-image: none !important;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0px 0px rgba(0, 0, 0, 0.075) !important;
   font-size: 16px;
-  a {
-    color: #0C65B1;
+  margin: 0;
+  padding-top: 10px;
+
+  li {
+    a {
+      color: $text-color;
+    }
+
+    a:hover {
+      text-decoration: underline !important;
+      color: $link-hover-color !important;
+    }
+    a:active {
+      color: #0C65B1 !important;
+    }
+
   }
-  a:hover {
-    text-decoration: underline!important;
-    color: #0C65B1!important;
-  }
-  a:active {
-    color: #0C65B1!important;
-  }
-  }
+}
 
 .custom-droptoggle {
   color: #777 !important;
-  }
+}
 
 .custom-b {
   margin-right: 7px !important;
@@ -57,37 +64,38 @@
 }
 
 .modal-hod {
-  max-width:400px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
 .send-button {
   width: 100%;
-  background: $color--blue!important;
-  background-color: $color--blue!important;
-  border-color: $color--blue!important;
+  background: $color--blue !important;
+  background-color: $color--blue !important;
+  border-color: $color--blue !important;
 }
 
 .send-button:hover {
-  background: $color--blue!important;
-  background-color: $color--blue!important;
-  border-color: $color--blue!important;
+  background: $color--blue !important;
+  background-color: $color--blue !important;
+  border-color: $color--blue !important;
 }
 
 .send-button:active {
   background: $color--blue !important;
-  border-color: $color--blue!important;
+  border-color: $color--blue !important;
   background-color: $color--blue !important;
 }
 
 .slide_background {
   background-image: url(../src/image/slide1.jpg);
-  min-height: 80vh;
+  min-height: 600px;
   //padding-top: 3%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .slide-button {
   position: absolute;
   width: 100%;
@@ -100,29 +108,30 @@
 
 .oid {
   background: white;
-  padding-left: 0px!important;
-  padding-right: 0px!important;
-  border-radius: 5px!important;
-  margin-top: 3%;
-  box-shadow: -1px 4px 4px 0 rgba(0,0,0,0.2);
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  border-radius: 5px !important;
+  margin-top: 32px;
+  padding-top: 57px;
+  box-shadow: -1px 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .oidcen {
   padding-right: 60px;
   padding-left: 61px;
   text-align: center;
-  h2 {
-    margin-top: 57px;
-  }
+
   h5 {
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 30px;
     margin-top: 27px;
     margin-bottom: 27px;
   }
 }
 
-
 .oiddown {
-  background: #f5f5f5;
+  background: $background--secondary;
+  color: rgba(0, 0, 0, 0.45);
   margin-top: 33px;
   width: auto;
   border-bottom-right-radius: 5px;
@@ -131,11 +140,17 @@
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 24px;
-  text-align: justify;
+  line-height: 24px;
+}
+
+.bold_text {
+  color: $text-color;
+  font-weight: bold;
+  margin-top: 24px;
 }
 
 .slide-control {
-  background-image: url(../src/icon/right.svg)!important;
+  background-image: url(../src/icon/right.svg) !important;
   background-repeat: no-repeat;
   background-position: 50%;
   right: 2%;
@@ -150,7 +165,7 @@
 }
 
 .slide-control:hover {
-  background-image: url(../src/icon/right_b.svg)!important;
+  background-image: url(../src/icon/right_b.svg) !important;
 }
 
 .slide-control-height {
@@ -166,8 +181,7 @@
   height: 350px;
   border-radius: 5px;
   background-repeat: no-repeat;
-  background-size: 100%;
-;
+  background-size: 100%;;
 }
 
 .toback {
@@ -181,7 +195,7 @@
   border-radius: 5px;
   margin-right: -$grid-gutter-width/2;
   max-height: 240px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   margin-bottom: 16px;
 }
 
@@ -213,6 +227,7 @@
 }
 
 .mar-slide {
+  margin-top: 72px;
   margin-bottom: 20px;
   width: 100%;
 }
@@ -233,11 +248,15 @@
   width: 100%;
 }
 
+// NAVIGATION
 .header-nav-fixed {
   background: rgba(255, 255, 255, .9);
   font-size: 16px;
-  color: #262626;
-  max-height: 72px;
+  min-height: 72px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .event_section {
@@ -252,11 +271,10 @@
 
 .star_team_section {
   background: #F5F5F5;
-  //max-width: 1347px;
-  width: 100%!important;
+  width: 100% !important;
   margin-top: 34px;
   padding-top: 16px;
-  box-shadow: 0 0 1px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
 .team_olympians {
@@ -267,7 +285,7 @@
   background: #F5F5F5;
   padding-top: 80px;
   padding-bottom: 16px;
-  box-shadow: 0 0 1px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
 
 }
 
@@ -280,12 +298,12 @@
   color: #FFFFFF;
   text-align: center;
   background: transparent;
-  box-shadow: 0 1px 0 0 rgba(255,255,255,0.12);
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.12);
 }
 
 .subscribe-text2 {
-  margin-top: 39px!important;
-  margin-bottom: 39px!important;
+  margin-top: 39px !important;
+  margin-bottom: 39px !important;
 }
 
 .subscribe-button_pad {
@@ -294,8 +312,8 @@
 }
 
 .subscribe-button {
-  color: $color--blue!important;
-  background: white!important;
+  color: $color--blue !important;
+  background: white !important;
   text-align: center;
   margin-top: 39px;
   margin-bottom: 39px;
@@ -382,8 +400,6 @@
     font-size: 18px;
   }
 }
-
-
 
 .contacts {
   height: 296px;
