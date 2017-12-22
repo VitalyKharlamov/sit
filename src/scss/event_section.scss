@@ -1,1 +1,11 @@
 @import "variables";
+
+.event_section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &-text {
+    line-height: 21px;
+    color: #262626;
+  }
+}

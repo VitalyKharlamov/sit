@@ -178,10 +178,9 @@
 
 .wodback {
   background-image: url(../src/image/wod.png);
-  height: 350px;
-  border-radius: 5px;
+  height: 408px;
   background-repeat: no-repeat;
-  background-size: 100%;;
+  background-size: cover;
 }
 
 .toback {
@@ -261,6 +260,7 @@
 
 .event_section {
   h3 {
+    margin-top: 52px;
     margin-bottom: 24px;
   }
 }
