@@ -1,0 +1,31 @@
+.second_slide {
+
+  &-content {
+    padding: {
+      top: 94px;
+      bottom: 83px;
+    }
+  }
+
+  &-title {
+    line-height: 1.44;
+  }
+
+  &-text {
+    line-height: 1.5;
+    min-height: 104px;
+    margin-bottom: 21px;
+  }
+
+  &-button {
+
+    &.button--primary {
+      width: 248px;
+
+      // Move it to general style for buttons
+      height: 48px;
+      line-height: 52px;
+    }
+  }
+
+}
