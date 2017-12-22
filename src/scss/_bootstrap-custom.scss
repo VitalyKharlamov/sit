@@ -1,6 +1,24 @@
 $body-bg: #fff;
 $text-color: #333132;
 $link-color: #0178be;
+$link-hover-color: lighten($link-color, 10%);
+$font-family-base: 'glober', sans-serif;
+$font-size-base: 14px;
+$font-size-large: 18px;
+$line-height-base: 1.5625;
+$btn-primary-color: #fff;
+$btn-primary-bg: #0178be;
+$btn-primary-border: #164170;
+$font-size-h1: 40px;
+$font-size-h2: 36px;
+$font-size-h3: 26px;
+$font-size-h4: 24px;
+$font-size-h5: 20px;
+$font-size-h6: 18px;
+$font-size-h7: 16px;
+
+$grid-gutter-width: 16px;
+$container-large-desktop: 1120px + $grid-gutter-width;
 
 @import "bootstrap";
 @import "bootstrap/theme";

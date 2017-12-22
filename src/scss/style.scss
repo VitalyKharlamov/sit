@@ -1,2 +1,415 @@
 @import "bootstrap-custom";
 @import "variables";
+
+.logo {
+  height: 50px;
+}
+
+.navbar-custom {
+  background-color: transparent!important;
+  border-color: transparent!important;
+  background-image: none!important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0px 0px rgba(0, 0, 0, 0.075) !important;
+  font-size: 16px;
+  a {
+    color: #0C65B1;
+  }
+  }
+
+.custom-droptoggle {
+  color: #777 !important;
+  }
+
+.custom-b {
+  margin-right: 7px !important;
+  margin-left: 7px !important;
+}
+
+.dropmenu-custom {
+  right: 0;
+  left: auto;
+  margin-right: 50px;
+}
+
+.cus-line {
+  border-right: 1px solid #777;
+  padding-right: 22px;
+}
+
+.margin-head {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bl3 {
+  background-image: url("src/image/3block.png");
+}
+
+.modal-hod {
+  max-width:400px;
+  margin: 0 auto;
+}
+
+.send-button {
+  width: 100%;
+  background: $color--blue!important;
+  background-color: $color--blue!important;
+  border-color: $color--blue!important;
+}
+
+.send-button:hover {
+  background: $color--blue!important;
+  background-color: $color--blue!important;
+  border-color: $color--blue!important;
+}
+
+.send-button:active {
+  background: $color--blue !important;
+  border-color: $color--blue!important;
+  background-color: $color--blue !important;
+}
+
+.slide_background {
+  background-image: url(../src/image/slide1.jpg);
+  min-height: 80vh;
+  //padding-top: 3%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slide-button {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.slide-button-container {
+  position: relative;
+}
+
+.oid {
+  background: white;
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+  border-radius: 5px!important;
+  margin-top: 3%;
+  box-shadow: -1px 4px 4px 0 rgba(0,0,0,0.2);
+}
+
+.oidcen {
+  padding-right: 60px;
+  padding-left: 61px;
+  text-align: center;
+  h2 {
+    margin-top: 57px;
+  }
+  h5 {
+    margin-top: 27px;
+    margin-bottom: 27px;
+  }
+}
+
+
+.oiddown {
+  background: #f5f5f5;
+  margin-top: 33px;
+  width: auto;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-top: 23px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  text-align: justify;
+}
+
+.slide-control {
+  background-image: url(../src/icon/right.svg)!important;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  right: 2%;
+  height: 48px;
+  width: 48px;
+  background-color: #FFFFFF;
+  box-shadow: -1px 4px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
+  left: auto;
+  right: 0;
+  margin-top: 8px;
+}
+
+.slide-control:hover {
+  background-image: url(../src/icon/right_b.svg)!important;
+}
+
+.slide-control-height {
+  height: 64px;
+}
+
+.slide-content {
+  content: none;
+}
+
+.wodback {
+  background-image: url(../src/image/wod.png);
+  height: 350px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+;
+}
+
+.toback {
+  background-image: url(../src/image/brendan.png);
+  height: 300px;
+}
+
+.spotsmens_info {
+  display: flex;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-right: -$grid-gutter-width/2;
+  max-height: 240px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  margin-bottom: 16px;
+}
+
+.sportsmens_bio {
+  h3 {
+    font-size: 27px;
+  }
+  background: white;
+  height: 295px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.star_title {
+  margin-right: 162px;
+  margin-left: 23px;
+  margin-top: 21px;
+}
+
+.sportsmens_title {
+  margin-left: 23px;
+  margin-top: 21px;
+}
+
+.sportsmens_biography {
+  margin-right: 24px;
+  margin-left: 23px;
+  margin-bottom: 18px;
+}
+
+.mar-slide {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.spotsmens_photo {
+  max-width: 35%;
+}
+
+.school2-margin {
+  margin-top: 18px;
+}
+
+.brandan_photo {
+  max-width: 265px;
+}
+
+.photo_size {
+  width: 100%;
+}
+
+.header-nav-fixed {
+  background: rgba(255, 255, 255, .9);
+  font-size: 16px;
+  color: #262626;
+  max-height: 72px;
+}
+
+.event_section {
+  h3 {
+    margin-bottom: 24px;
+  }
+}
+
+.event-button {
+  margin-top: 60px;
+}
+
+.star_team_section {
+  background: #F5F5F5;
+  //max-width: 1347px;
+  width: 100%!important;
+  margin-top: 34px;
+  padding-top: 16px;
+  box-shadow: 0 0 1px 0 rgba(0,0,0,0.5);
+}
+
+.team_olympians {
+  margin-top: 7%;
+}
+
+.sportsmens_section {
+  background: #F5F5F5;
+  padding-top: 80px;
+  padding-bottom: 16px;
+  box-shadow: 0 0 1px 0 rgba(0,0,0,0.5);
+
+}
+
+.subscribe_section {
+  background: linear-gradient(135deg, #007ABF 0%, #003A6F 100%);
+  width: 100%;
+}
+
+.subscribe-text {
+  color: #FFFFFF;
+  text-align: center;
+  background: transparent;
+  border-bottom: 1px solid #777;
+}
+
+.subscribe-text2 {
+  margin-top: 39px!important;
+  margin-bottom: 39px!important;
+}
+
+.subscribe-button_pad {
+  background: transparent;
+  text-align: center;
+}
+
+.subscribe-button {
+  color: $color--blue!important;
+  background: white!important;
+  text-align: center;
+  margin-top: 39px;
+  margin-bottom: 39px;
+}
+
+.testimonials-title {
+  color: #0C65B1;
+}
+
+.software_section {
+  position: relative;
+  height: 408px;
+}
+
+.software-margin {
+  margin-top: 32px;
+}
+
+.software-macbook {
+  position: absolute;
+  margin-left: 50%;
+  top: 0;
+  img {
+    height: 470px;
+  }
+}
+
+.visit-product-page {
+  background: linear-gradient(90deg, #F5F5F5 0%, #FFFFFF 100%);
+  height: 104px;
+  padding-top: 41px;
+  a {
+    font-size: 18px;
+  }
+}
+
+.ask_questions {
+  height: 320px;
+  background-color: #1E1E1E;
+  h3 {
+    margin-left: 79px;
+    margin-right: 78px;
+    margin-top: 123px;
+    color: rgba(255,255,255,0.5);
+  }
+  text-align: center;
+}
+
+.ask-form {
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding-top: 43px;
+}
+
+.ask-form-background {
+  background-color: #1E1E1E;
+  border: 1px solid rgba(255,255,255,0.5);
+  max-width: 448px;
+}
+
+.message-margin {
+  margin-top: 27px;
+}
+
+.message-height {
+  height: 96px!important;
+}
+
+.email-height {
+  height: 48px;
+}
+
+.contacts {
+  height: 296px;
+  font-size: 16px;
+  img {
+    margin-top: 98px;
+    float: right;
+  }
+}
+
+.contacts-margin {
+  margin-top: 65px;
+}
+
+//buttons
+.button- {
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.125em;
+  font-family: $font-family-base;
+  height: 50px;
+  line-height: 52px;
+  //padding: 13px 0 12px;
+  text-align: center;
+  width: 190px;
+  box-shadow: none;
+
+  &-primary {
+    @extend .button-;
+    background: $btn-primary-bg;
+    color: $btn-primary-color;
+    border: none;
+
+    &:hover {
+      background: lighten($btn-primary-bg, 5%);
+      color: #fff;
+      text-decoration: none;
+    }
+    &__short {
+      @extend .button--primary;
+      width: 80px;
+    }
+  }
+
+  &-default {
+    @extend .button-;
+    background: #fff;
+    border: solid 1px $color--gray;
+    color: $color--blue;
+    &:hover {
+      background: #f5f5f5;
+      text-decoration: none;
+    }
+  }
+}
