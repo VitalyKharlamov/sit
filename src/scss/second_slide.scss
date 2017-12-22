@@ -2,6 +2,9 @@
 
 .second_slide {
 
+  position: relative;
+  overflow: hidden;
+
   &-left {
     position: relative;
   }
@@ -42,6 +45,18 @@
       height: 456px;
       margin-left: 24px;
       position: absolute;
+      width: auto;
+    }
+  }
+
+  &-right {
+    margin-top: 32px;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      height: 520px;
       width: auto;
     }
   }
