@@ -5,6 +5,10 @@
   height: 50px;
 }
 
+.fontbold {
+  font-weight: bold;
+}
+
 .navbar-custom {
   background-color: transparent!important;
   border-color: transparent!important;
@@ -13,6 +17,13 @@
   font-size: 16px;
   a {
     color: #0C65B1;
+  }
+  a:hover {
+    text-decoration: underline!important;
+    color: #0C65B1!important;
+  }
+  a:active {
+    color: #0C65B1!important;
   }
   }
 
@@ -269,7 +280,7 @@
   color: #FFFFFF;
   text-align: center;
   background: transparent;
-  border-bottom: 1px solid #777;
+  box-shadow: 0 1px 0 0 rgba(255,255,255,0.12);
 }
 
 .subscribe-text2 {
@@ -292,11 +303,58 @@
 
 .testimonials-title {
   color: #0C65B1;
+  margin-top: 16px;
+}
+
+.testimonial-bottom {
+  margin-bottom: 22px;
+}
+
+.testimonial-school {
+  max-width: 144px;
+  margin-top: 16px;
+}
+
+.testimonial1-background {
+  background-image: url(../src/image/testimponial1.jpg);
+  min-height: 240px;
+  //padding-top: 3%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.testimonial2-background {
+  background-image: url(../src/image/testimonial2.jpg);
+  min-height: 240px;
+  //padding-top: 3%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.testimonial3-background {
+  background-image: url(../src/image/testimonial2.jpg);
+  min-height: 240px;
+  //padding-top: 3%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.testimonial4-background {
+  background-image: url(../src/image/testimonial2.jpg);
+  min-height: 240px;
+  //padding-top: 3%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .software_section {
   position: relative;
   height: 408px;
+  margin-top: 80px;
 }
 
 .software-margin {
@@ -310,6 +368,10 @@
   img {
     height: 470px;
   }
+}
+
+.software-button {
+  margin-top: 40px;
 }
 
 .visit-product-page {
@@ -328,7 +390,8 @@
     margin-left: 79px;
     margin-right: 78px;
     margin-top: 123px;
-    color: rgba(255,255,255,0.5);
+    color: #FFFFFF;
+    line-height: 37px;
   }
   text-align: center;
 }
@@ -344,6 +407,10 @@
   background-color: #1E1E1E;
   border: 1px solid rgba(255,255,255,0.5);
   max-width: 448px;
+}
+
+.ask-phone {
+  color: rgba(255,255,255,0.5);
 }
 
 .message-margin {
