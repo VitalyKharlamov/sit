@@ -1,4 +1,5 @@
 @import "variables";
+@import "bootstrap-custom";
 
 .second_slide {
 
@@ -34,8 +35,13 @@
       width: 248px;
 
       // Move it to general style for buttons
+      font-size: 1.26em;
       height: 48px;
       line-height: 52px;
+
+      &:hover {
+        background: #0066AB;
+      }
     }
   }
 
@@ -70,9 +76,35 @@
 .grey_block {
   min-height: 104px;
   padding-top: 41px;
-  background: $background--secondary;
+  background: linear-gradient(270deg, #FFFFFF 0%, #F5F5F5 100%);;
 
   a {
     font-size: 18px;
   }
+}
+
+@media (max-width: $screen-md-max) {
+  .second_slide {
+
+    &-content {
+      padding-bottom: 50px;
+    }
+
+    &-title {
+      font-size: 30px;
+    }
+  }
+
+}
+
+@media (max-width: $screen-sm-min) {
+
+  .second_slide {
+    text-align: center;
+
+    &-left {
+      max-width: 400px;
+    }
+  }
+
 }
