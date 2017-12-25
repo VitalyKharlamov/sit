@@ -1,27 +1,18 @@
 @import "variables";
+@import "bootstrap-custom";
 
 $contact-section-background: #1E1E1E;
-$contact-section-color: rgba(255,255,255,0.5);
+$contact-section-color: rgba(255, 255, 255, 0.5);
 $contact-section-border: rgba(255, 255, 255, 0.5);
 
 .ask_questions {
 
-  min-height: 320px;
-  background-color: $contact-section-background;
-
   h3 {
-    margin-top: 123px;
     color: white;
     line-height: 37px;
+    margin: 0;
   }
   text-align: center;
-
-  .ask-form {
-    text-align: left;
-    color: white;
-    font-size: 16px;
-    padding-top: 43px;
-  }
 
   .ask-form-background {
     background-color: $contact-section-background;
@@ -51,6 +42,27 @@ $contact-section-border: rgba(255, 255, 255, 0.5);
 
 }
 
+.contact_section {
+  background-color: $contact-section-background;
+
+  &-left {
+    box-shadow: -1px 0 0 0 rgba(255, 255, 255, 0.12), 1px 0 0 0 rgba(255, 255, 255, 0.12);
+    min-height: 320px;
+    padding-top: 123px;
+  }
+
+  &-right {
+    box-shadow: 1px 0 0 0 rgba(255, 255, 255, 0.12);
+    color: white;
+    font-size: 16px;
+    margin-left: -$grid-gutter-width;
+    min-height: 320px;
+    padding-top: 43px;
+    text-align: left;
+  }
+
+}
+
 .contact_form {
   display: block;
   margin: 0 auto;
@@ -63,33 +75,42 @@ $contact-section-border: rgba(255, 255, 255, 0.5);
     font-weight: normal;
   }
 
+  .email_container:hover {
+    .send_button {
+      background: $color--blue;
+      border-color: $color--blue;
+      color: white;
+    }
+  }
+
   &-email, &-message {
     border-radius: 4px;
     display: block;
     padding: 8px 16px;
     width: 100%;
 
-    //&:focus {
-    //  border-color: $color--blue;
-    //}
+    &:hover,
+    &:focus {
+      border-color: $color--blue;
+
+    }
   }
 
-}
+  .send_button {
+    background: #242424;
+    border: solid $contact-section-border;
+    border-width: 1px 1px 1px 0;
+    height: 48px;
+    line-height: 52px;
+    width: 104px;
+    border-radius: 0 4px 4px 0;
+    color: $contact-section-color;
+    position: absolute;
+    top: 0;
+    right: 0;
 
-.send_button {
-  background: #242424;
-  border: solid $contact-section-border;
-  border-width: 1px 1px 1px 0;
-  height: 48px;
-  line-height: 52px;
-  width: 104px;
-  border-radius: 0 4px 4px 0;
-  color: $contact-section-color;
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  //&:active {
-  //  background-color: $color--blue;
-  //}
+    //&:active {
+    //  background-color: $color--blue;
+    //}
+  }
 }
