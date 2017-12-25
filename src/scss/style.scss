@@ -94,62 +94,7 @@
   background-color: $color--blue !important;
 }
 
-.slide_background {
-  background-image: url(../src/image/slide1.jpg);
-  min-height: 600px;
-  //padding-top: 3%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
-.slide-button {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
-
-.slide-button-container {
-  position: relative;
-}
-
-.oid {
-  background: white;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-  border-radius: 5px !important;
-  margin-top: 32px;
-  padding-top: 57px;
-  box-shadow: -1px 4px 4px 0 rgba(0, 0, 0, 0.2);
-  right: 8px;
-}
-
-.oidcen {
-  padding-right: 60px;
-  padding-left: 61px;
-  text-align: center;
-
-  h5 {
-    color: rgba(0, 0, 0, 0.45);
-    line-height: 30px;
-    margin-top: 27px;
-    margin-bottom: 27px;
-  }
-}
-
-.oiddown {
-  background: $background--secondary;
-  color: rgba(0, 0, 0, 0.45);
-  margin-top: 33px;
-  width: auto;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  padding-top: 23px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 24px;
-  line-height: 24px;
-}
 
 .bold_text {
   color: $text-color;
@@ -231,12 +176,6 @@
   margin-left: 24px;
   margin-bottom: 18px;
   margin-top: 24px;
-}
-
-.mar-slide {
-  margin-top: 72px;
-  margin-bottom: 20px;
-  width: 100%;
 }
 
 sportsmens-margin {
