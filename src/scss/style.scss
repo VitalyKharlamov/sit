@@ -163,6 +163,9 @@
   bottom: 0;
   margin-top: -64px;
 }
+.sportsmens-slide {
+  margin-top: 0;
+}
 
 .star_title {
   margin-right: 162px;
@@ -274,6 +277,7 @@ sportsmens-margin {
 .testimonials-title {
   color: rgb(0,122,191);
   margin-top: 16px;
+  line-height: 35px;
 }
 
 .testimonial-bottom {
@@ -283,11 +287,30 @@ sportsmens-margin {
 .testimonial-school {
   max-width: 144px;
   margin-top: 16px;
+  margin-left: 16px;
+  float: right;
+}
+
+.testimonial-school-section {
+  box-shadow: -1px 0 0 0 rgba(0,0,0,0.12);
+  min-height: 240px;
+  padding-right: 16px;
+  margin-left: 8px;
+  padding-left: 0;
+  max-width: 176px;
+  //padding-top: 123px;
+}
+
+.testimonial-info {
+  box-shadow: -1px 0 0 0 rgba(0,0,0,0.12);
+  min-height: 240px;
+  padding-left: 32px;
 }
 
 .testimonial1-background {
   background-image: url(../src/image/testimponial1.jpg);
   min-height: 240px;
+  min-width: 272px;
   //padding-top: 3%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -297,6 +320,7 @@ sportsmens-margin {
 .testimonial2-background {
   background-image: url(../src/image/testimonial2.jpg);
   min-height: 240px;
+  min-width: 272px;
   //padding-top: 3%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -304,8 +328,9 @@ sportsmens-margin {
 }
 
 .testimonial3-background {
-  background-image: url(../src/image/testimonial2.jpg);
+  background-image: url(../src/image/testemonial3.jpg);
   min-height: 240px;
+  min-width: 272px;
   //padding-top: 3%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -313,8 +338,9 @@ sportsmens-margin {
 }
 
 .testimonial4-background {
-  background-image: url(../src/image/testimonial2.jpg);
+  background-image: url(../src/image/testimonial4.jpg);
   min-height: 240px;
+  min-width: 272px;
   //padding-top: 3%;
   background-size: cover;
   background-repeat: no-repeat;
