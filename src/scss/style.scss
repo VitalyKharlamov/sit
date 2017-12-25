@@ -176,13 +176,6 @@
   content: none;
 }
 
-.wodback {
-  background-image: url(../src/image/wod.png);
-  height: 408px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .toback {
   background-image: url(../src/image/brendan.png);
   height: 300px;
@@ -256,17 +249,6 @@
   top: 0;
   width: 100%;
   z-index: 1;
-}
-
-.event_section {
-  h3 {
-    margin-top: 52px;
-    margin-bottom: 24px;
-  }
-}
-
-.event-button {
-  margin-top: 60px;
 }
 
 .star_team_section {
