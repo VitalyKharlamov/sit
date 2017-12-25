@@ -567,38 +567,42 @@
 </section>
 <!--./Software-->
 
-<!--Ask questions-->
-<section class="ask_questions">
+<!--CONTACT SECTION-->
+<section class="ask_questions contact_section">
     <div class="container">
         <div class="row">
 
             <div class="col-md-6">
-                <h3>
-                    Feel free to ask questions via email, <br/>
-                    or call us
-                    <span class="ask-phone">01293 734004</span>
-                </h3>
+                <div class="contact_section-left">
+                    <h3>
+                        Feel free to ask questions via email, <br/>
+                        or call us
+                        <span class="ask-phone">01293 734004</span>
+                    </h3>
+                </div>
             </div>
 
-            <div class="col-md-6 ask-form">
+            <div class="col-md-6">
 
-                <div class="contact_form">
+                <div class="contact_section-right">
 
-                    <label for="email">Email</label>
-                    <div class="email_container">
-                        <input type="email" class="email-height ask-form-background contact_form-email" id="email">
+                    <div class="contact_form">
+                        <!--EMAIL-->
+                        <label for="email">Email</label>
+                        <div class="email_container">
+                            <input type="email" class="email-height ask-form-background contact_form-email" id="email" />
+                            <button class="send_button">
+                                Send
+                            </button>
+                        </div>
+                        <!--./EMAIL-->
 
-                        <button class="send_button">
-                            Send
-                        </button>
+
+                        <label class="message-margin" for="message">Your message</label>
+                        <textarea id="message" class="message-height ask-form-background contact_form-message"
+                                  rows="5"></textarea>
 
                     </div>
-
-
-                    <label class="message-margin" for="message">Your message</label>
-                    <textarea id="message" class="message-height ask-form-background contact_form-message"
-                              rows="5"></textarea>
-
                 </div>
             </div>
 
@@ -607,8 +611,7 @@
 
 
 </section>
-
-<!--./Ask questions-->
+<!--./CONTACT SECTION-->
 
 <!--Contacts-->
 <section id="contact" class="contacts">
