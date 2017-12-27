@@ -33,3 +33,10 @@ function submitForm(){
 function formSuccess(){
 	$( "#msgSubmit" ).removeClass( "hidden" );
 }
+
+$(document).ready(function() {
+			$("a.first").fancybox();
+			$("a.two").fancybox();
+			$("a.video").fancybox({"frameWidth": 520,"frameHeight": 400});
+			$("a.content").fancybox({"frameWidth": 600,"frameHeight": 300});
+		});

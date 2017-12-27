@@ -83,6 +83,16 @@
 .modal-hod {
   max-width: 400px;
   margin: 0 auto;
+  textarea {
+    height: 48px;
+  }
+  input {
+    height: 48px;
+  }
+}
+
+.modal-width {
+  width: 100%;
 }
 
 .send-button {
@@ -440,6 +450,11 @@ sportsmens-margin {
 .copyright-margin {
   margin-top: 27px;
 }
+
+.contact-divider-color {
+  color: rgba(0,0,0,30);
+}
+
 
 //buttons
 .button- {
