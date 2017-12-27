@@ -84,7 +84,7 @@
     li {
       a {
         color: $text-color;
-        min-height: auto !important;
+        min-height: 70px;
         padding-top: 24.5px;
       }
 
@@ -92,8 +92,16 @@
         text-decoration: underline !important;
         color: $link-hover-color !important;
       }
-      a:active {
+
+      &.active a {
+        background: none;
+        box-shadow: none;
         color: #0C65B1 !important;
+
+        &:focus,
+        &:hover {
+          background: none;
+        }
       }
 
     }

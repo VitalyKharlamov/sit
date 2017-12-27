@@ -36,7 +36,7 @@ function formSuccess(){
 
 // Add smooth scrolling on all links inside the navbar
 $(document).ready(function() {
-    $('#navbar-main a[href*=\"#\"]:not([href=\"#\"])').click(function () {
+    $('a.smooth_scroll[href*=\"#\"]:not([href=\"#\"])').click(function () {
 
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);

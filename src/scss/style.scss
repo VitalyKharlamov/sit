@@ -16,32 +16,6 @@
   font-weight: bold;
 }
 
-.navbar-custom {
-  background-color: transparent !important;
-  border-color: transparent !important;
-  background-image: none !important;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0px 0px rgba(0, 0, 0, 0.075) !important;
-  font-size: 16px;
-  margin: 0;
-
-  li {
-    a {
-      color: $text-color;
-      min-height: 72px;
-      padding-top: 24.5px;
-    }
-
-    a:hover {
-      text-decoration: underline !important;
-      color: $link-hover-color !important;
-    }
-    a:active {
-      color: #0C65B1 !important;
-    }
-
-  }
-}
-
 .host-event-color {
   color: rgb(0,122,191)!important;
 }
