@@ -29,22 +29,6 @@
     margin-bottom: 21px;
   }
 
-  &-button {
-
-    &.button--primary {
-      width: 248px;
-
-      // Move it to general style for buttons
-      font-size: 1.26em;
-      height: 48px;
-      line-height: 52px;
-
-      &:hover {
-        background: #0066AB;
-      }
-    }
-  }
-
   //PHONE
   &-phone {
     padding-top: 96px;
@@ -79,7 +63,6 @@
 .slide_background {
   background-image: url(../src/image/slide1.jpg);
   min-height: 600px;
-  //padding-top: 3%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -95,6 +78,7 @@
   position: relative;
 }
 
+// TODO Rename the classes below
 .oid {
   background: white;
   padding-left: 0px !important;

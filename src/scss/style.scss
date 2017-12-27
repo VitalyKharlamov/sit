@@ -97,24 +97,7 @@
 
 .send-button {
   width: 100%;
-  background: $color--blue !important;
-  background-color: $color--blue !important;
-  border-color: $color--blue !important;
 }
-
-.send-button:hover {
-  background: $color--blue !important;
-  background-color: $color--blue !important;
-  border-color: $color--blue !important;
-}
-
-.send-button:active {
-  background: $color--blue !important;
-  border-color: $color--blue !important;
-  background-color: $color--blue !important;
-}
-
-
 
 .bold_text {
   color: $text-color;
@@ -280,6 +263,7 @@ sportsmens-margin {
 
 .subscribe_section {
   background: linear-gradient(135deg, #007ABF 0%, #003A6F 100%);
+  text-align: center;
   width: 100%;
 }
 
@@ -297,17 +281,8 @@ sportsmens-margin {
   line-height: 58px;
 }
 
-.subscribe-button_pad {
-  background: transparent;
-  text-align: center;
-}
-
 .subscribe-button {
-  color: $color--blue !important;
-  background: white !important;
-  text-align: center;
-  margin-top: 39px;
-  margin-bottom: 39px;
+  margin: 39px auto;
 }
 
 .testimonials-title {
