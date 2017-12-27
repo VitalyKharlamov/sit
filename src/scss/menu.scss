@@ -1,0 +1,101 @@
+@import "variables";
+@import "bootstrap-custom";
+
+.menu_dropdown {
+  align-items: center;
+  display: flex;
+  box-shadow: -1px 0 0 0 rgba(0, 0, 0, 0.12);
+  min-height: 48px;
+  margin-left: 22px;
+  position: relative;
+
+  .caret_custom {
+    margin: 0 16px;
+  }
+
+  &.open {
+    box-shadow: -1px 0 0 0 rgba(0, 0, 0, 0.45);
+
+    .caret_custom {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.menu_left {
+  align-items: center;
+  display: flex;
+
+  margin: {
+    top: 12px;
+  }
+;
+  min-height: 48px;
+
+  .dropdown_list {
+    background: transparent;
+    border-radius: 0;
+    border: 0;
+    border: none;
+    box-shadow: -1px 0 0 0 rgba(0, 0, 0, 0.45);
+    margin: 0;
+    padding: 12px 0 0;
+
+    li > a {
+      background-color: $background--secondary;
+      box-shadow: none;
+      border-bottom: solid 1px #E6E6E6;
+      font-size: 16px;
+      height: 48px;
+      padding: 14px 20px 0 40px;
+      margin: 0;
+      min-width: 256px;
+
+      &.active {
+        color: rgba(0, 0, 0, 0.3);
+
+        &:hover {
+          text-decoration: none;
+          color: rgba(0, 0, 0, 0.3);
+        }
+      }
+
+      &:hover {
+        background: $background--secondary;
+        color: $link-color;
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+}
+
+.menu_right {
+
+  .navbar-custom {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    background-image: none !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0px 0px rgba(0, 0, 0, 0.075) !important;
+    font-size: 16px;
+    margin: 0;
+
+    li {
+      a {
+        color: $text-color;
+        min-height: auto !important;
+        padding-top: 24.5px;
+      }
+
+      a:hover {
+        text-decoration: underline !important;
+        color: $link-hover-color !important;
+      }
+      a:active {
+        color: #0C65B1 !important;
+      }
+
+    }
+  }
+}
