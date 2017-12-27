@@ -36,7 +36,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('/dist/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  src: url('../dist/fonts/Roboto.ttf') format('truetype'),
+  url('https://fonts.googleapis.com/css?family=Roboto');
   font-weight: normal;
   font-style: normal;
 }
