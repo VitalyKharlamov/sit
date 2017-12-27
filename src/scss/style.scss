@@ -95,6 +95,15 @@
   width: 100%;
 }
 
+.close-popup {
+  background: url("../src/icon/x.svg") no-repeat center!important;
+  height: 24px;
+  width: 24px;
+  &:hover {
+  background: url("../src/icon/x_b.svg") no-repeat center!important;
+}
+}
+
 .send-button {
   width: 100%;
 }
