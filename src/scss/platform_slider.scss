@@ -45,3 +45,13 @@
     }
   }
 }
+
+@media screen and (max-width: 767px){
+  .platform_slide {
+    padding: 24px;
+
+    .button--primary {
+      max-width: 100%;
+    }
+  }
+}
