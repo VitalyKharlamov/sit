@@ -1,10 +1,39 @@
 @import "variables";
 
+$border-color-primary: #E6E6E6;
+
 .description_section {
   overflow: hidden;
   min-height: 600px;
 }
 
+.description_tabs {
+
+  &-container {
+    padding: {
+      top: 56px;
+    };
+  }
+
+  li {
+    border-right: solid 1px $border-color-primary;
+    color: rgba(0,0,0,0.3);
+    font-size: 24px;
+    height: 64px;
+    padding: 16px 24px;
+
+    &:first-child {
+      border-left:solid 1px $border-color-primary;
+    }
+
+    &.current {
+      color: $color--blue;
+      font-weight: bold;
+    }
+  }
+}
+
+// GENERAL TABS
 ul.tabs{
   margin: 0px;
   padding: 0px;
@@ -12,21 +41,16 @@ ul.tabs{
 }
 ul.tabs li{
   background: none;
-  color: #222;
   display: inline-block;
-  padding: 10px 15px;
   cursor: pointer;
 }
 
 ul.tabs li.current{
-  background: #ededed;
-  color: #222;
+
 }
 
 .tab-content{
   display: none;
-  background: #ededed;
-  padding: 15px;
 }
 
 .tab-content.current{
