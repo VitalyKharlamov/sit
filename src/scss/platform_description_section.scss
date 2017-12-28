@@ -4,7 +4,10 @@ $border-color-primary: #E6E6E6;
 
 .description_section {
   overflow: hidden;
-  min-height: 600px;
+  min-height: 584px;
+
+  .description_button {
+  }
 }
 
 .description_tabs {
@@ -24,11 +27,24 @@ $border-color-primary: #E6E6E6;
 
     &:first-child {
       border-left:solid 1px $border-color-primary;
+      margin-left: 8px;
     }
 
     &.current {
       color: $color--blue;
       font-weight: bold;
+    }
+  }
+
+  &-content {
+    min-height: 372px;
+    padding: {
+      top: 56px;
+      left: 16px;
+    };
+
+    p {
+      margin: 0 0 24px;
     }
   }
 }
