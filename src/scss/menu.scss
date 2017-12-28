@@ -71,6 +71,12 @@
 
 }
 
+.fixed_menu-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
 .menu_right {
 
   .navbar-custom {
@@ -89,7 +95,7 @@
       a {
         color: $text-color;
         min-height: 70px;
-        padding-top: 24.5px;
+        padding-top: 30px;
       }
 
       a:focus,
@@ -115,6 +121,10 @@
 
 }
 
+@media (max-width: $screen-md-max) {
+
+}
+
 @media (max-width: $screen-sm-min) {
 
   .logo {
@@ -128,7 +138,6 @@
     .menu_button {
       position: absolute;
       right: 0;
-      top: -60px;
       display: flex !important;
       align-items: center;
       justify-content: center;
@@ -146,14 +155,14 @@
       right: 8px;
       width: 100%;
 
-      &-overlay  {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: #d2d;
-      }
+      //&-overlay  {
+      //  position: fixed;
+      //  top: 0;
+      //  left: 0;
+      //  right: 0;
+      //  bottom: 0;
+      //  background: #d2d;
+      //}
 
       &-item {
 
