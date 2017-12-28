@@ -1,5 +1,4 @@
 @import "variables";
-@import "bootstrap-custom";
 
 .event_section {
   min-height: 480px;
@@ -28,7 +27,7 @@
   margin-top: 88px;
 }
 
-@media (max-width: $screen-xs-max) {
+@media screen and (max-width: 678px) {
 
   .event_section {
     h3 {
@@ -51,5 +50,6 @@
 
   .event-button {
     margin-top: 24px;
+    width: 100%;
   }
 }
