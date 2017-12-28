@@ -1,0 +1,96 @@
+@import "bootstrap-custom";
+@import "variables";
+
+.star_team_section {
+  background: #F5F5F5;
+  width: 100% !important;
+  padding-top: 16px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+
+  .team_olympians {
+    margin-top: 7%;
+  }
+
+  .spotsmens_info {
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    max-height: 240px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+  }
+
+  .sportsmens_bio {
+    h3 {
+      font-size: 27px;
+    }
+    background: white;
+    height: 295px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .star_title {
+    margin-right: 162px;
+    margin-left: 24px;
+    margin-top: 24px;
+  }
+  .sportsmens_biography {
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-bottom: 18px;
+    margin-top: 24px;
+  }
+  .brandan_photo {
+    max-width: 265px;
+  }
+  .photo_size {
+    height: 100%;
+  }
+}
+
+
+@media (max-width: $screen-xs-max) {
+  .star_team_section {
+    height: auto;
+    padding-top: 0;
+
+    .team_olympians {
+      h1 {
+        font-size: 26px;
+        margin-left: 16px;
+      }
+
+    }
+    .spotsmens_info {
+      box-shadow: 0 0 0 0 !important;
+      border-radius: 0;
+      display: inline;
+      height: 100%;
+    }
+    .photo_size {
+      height: 164.44px;
+      border-radius: 82.22px;
+      margin-left: 16px;
+    }
+    .sportsmens_bio {
+      background: none;
+      height: auto;
+      vertical-align: middle;
+      width: 100%;
+    }
+    .star_title {
+      margin-right: 16px;
+      margin-top: 27.56px;
+      margin-left: 16px;
+      h6 {
+        font-size: 14px;
+      }
+    }
+    .sportsmens_biography {
+      margin-top: 17px;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+  }
+}
