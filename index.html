@@ -770,9 +770,9 @@
                                     </div>
                                 </div>
                                 <div class="col-md-3 testimonial-picture-padding">
-                                    <iframe width="276" height="240" src="https://www.youtube.com/embed/AjAyz7-cSKc"
-                                            frameborder="0" gesture="media" allow="encrypted-media"
-                                            allowfullscreen></iframe>
+                                    <a href="#videoyoutube" data-toggle="modal">
+                                        <div class="testimonial1-background"></div>
+                                    </a>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="testimonial2-background"></div>
@@ -1004,7 +1004,7 @@
                     01293 734004
                 </div>
                 <div><a class="contact-decoration" href="https://www.facebook.com/SquadInTouch/"> Facebook</a> <span
-                        class="contact-divider-color"> | </span>
+                        class="contact-divider-color">&nbsp; | &nbsp;</span>
                     <a class="contact-decoration" href="https://twitter.com/squadintouch"> Twitter</a></div>
             </div>
             <div class="col-md-4 col-md-offset-4">
@@ -1020,161 +1020,197 @@
 
 <!--./Contacts-->
 
-<!-- HTML-код модального окна -->
+<!-- Модальное оно Host Event -->
 <div class="container">
     <div class="row">
         <div id="myModal" class="modal fade col-md-8 col-md-offset-2">
-            <div class="modal-dialog modal-width">
-                <div class="modal-content ">
-                    <!-- Заголовок модального окна -->
-                    <div class="modal-header sportsmen_modal-header">
-                        <button type="button" class="close close-popup" data-dismiss="modal"
-                                aria-hidden="true">
-                        </button>
-                        <h4 class="modal-title">Host Sport Stars Inspiration Day</h4>
-                    </div>
-                    <!-- Основное содержимое модального окна -->
-                    <form role="form" id="contactForm">
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="form-group modal-hod">
-                                    <label for="email" class="h4">Your email</label>
-                                    <input type="email" class="form-control olympian_form-height" id="email"
-                                           placeholder="Enter email" required>
-                                </div>
-                                <div class="form-group modal-hod">
-                                    <label for="name" class="h4">School name</label>
-                                    <input type="text" class="form-control olympian_form-height" id="name"
-                                           placeholder="Enter school name" required>
-                                </div>
-                                <div class="form-group modal-hod">
-                                    <div class="form-group">
-                                        <label for="message" class="h4 ">Additional notes
-                                            (optional)</label>
-                                        <textarea id="message" class="form-control olympian_form-height" rows="5"
-                                                  placeholder="Enter your message"
-                                                  required></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group modal-hod">
-                                    <button type="submit" id="form-submit"
-                                            class="button--primary send-button">
-                                        Submit
-                                    </button>
-                                    <div id="msgSubmit" class="h3 text-center hidden">
-                                        Message Submitted!
-                                    </div>
-                                    .
-                                </div>
-                            </div>
-
+            <div class="modal-center">
+                <div class="modal-dialog modal-width">
+                    <div class="modal-content ">
+                        <!-- Заголовок модального окна -->
+                        <div class="modal-header sportsmen_modal-header">
+                            <button type="button" class="close close-popup" data-dismiss="modal"
+                                    aria-hidden="true">
+                            </button>
+                            <h4 class="modal-title">Host Sport Stars Inspiration Day</h4>
                         </div>
-                    </form>
-                    <!-- Футер модального окна -->
+                        <!-- Основное содержимое модального окна -->
+                        <form role="form" id="contactForm">
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="form-group modal-hod">
+                                        <label for="email" class="h4">Your email</label>
+                                        <input type="email" class="form-control olympian_form-height" id="email"
+                                               placeholder="Enter email" required>
+                                    </div>
+                                    <div class="form-group modal-hod">
+                                        <label for="name" class="h4">School name</label>
+                                        <input type="text" class="form-control olympian_form-height" id="name"
+                                               placeholder="Enter school name" required>
+                                    </div>
+                                    <div class="form-group modal-hod">
+                                        <div class="form-group">
+                                            <label for="message" class="h4 ">Additional notes
+                                                (optional)</label>
+                                            <textarea id="message" class="form-control olympian_form-height" rows="5"
+                                                      placeholder="Enter your message"
+                                                      required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group modal-hod">
+                                        <button type="submit" id="form-submit"
+                                                class="button--primary send-button">
+                                            Submit
+                                        </button>
+                                        <div id="msgSubmit" class="h3 text-center hidden">
+                                            Message Submitted!
+                                        </div>
+                                        .
+                                    </div>
+                                </div>
 
+                            </div>
+                        </form>
+                        <!-- Футер модального окна -->
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- HTML-код модального окна -->
+<!-- Мodal window Martyn -->
 <div id="martynmodal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <!-- Заголовок модального окна -->
-            <div class="modal-header sportsmen_modal-header">
-                <button type="button" class="close close-popup" data-dismiss="modal"
-                        aria-hidden="true">
-                </button>
-                <h4 class="modal-title">Team</h4>
-            </div>
-            <!-- Основное содержимое модального окна -->
-            <div>
-                <div class="sportsmens_title">
-                    <h6 class="sportsmen_subheader"><span class="fontbold">Martyn Bernard</span>
-                        <br>One of the most successful British
-                        High Jumper ever</br></h6>
+    <div class="modal-center">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Заголовок модального окна -->
+                <div class="modal-header sportsmen_modal-header">
+                    <button type="button" class="close close-popup" data-dismiss="modal"
+                            aria-hidden="true">
+                    </button>
+                    <h4 class="modal-title">Team</h4>
                 </div>
-                <div class="sportsmens_modal-biography">An Olympic Finalist, European and Commonwealth Games Medallist
-                    with a
-                    best of 2m30cm. Martyn is a fine example of having a plan B away from the athletics track.
-                    He graduated from psychology and has recently started a law degree. He has interests in film and an
-                    honorary director of the Film production Company, "21st Century Filmworks Ltd", A Fucilla Production
-                    Company, and co-producer of the film “Fields of Gold” currently in pre production stage.
-                    <br/>
-                    <br>An inspiration on many levels.
-                </div>
+                <!-- Основное содержимое модального окна -->
+                <div>
+                    <div class="sportsmens_title">
+                        <h6 class="sportsmen_subheader"><span class="fontbold">Martyn Bernard</span>
+                            <br>One of the most successful British
+                            High Jumper ever</br></h6>
+                    </div>
+                    <div class="sportsmens_modal-biography">An Olympic Finalist, European and Commonwealth Games
+                        Medallist
+                        with a
+                        best of 2m30cm. Martyn is a fine example of having a plan B away from the athletics track.
+                        He graduated from psychology and has recently started a law degree. He has interests in film and
+                        an
+                        honorary director of the Film production Company, "21st Century Filmworks Ltd", A Fucilla
+                        Production
+                        Company, and co-producer of the film “Fields of Gold” currently in pre production stage.
+                        <br/>
+                        <br>An inspiration on many levels.
+                    </div>
 
+
+                </div>
+                <!-- Футер модального окна -->
 
             </div>
-            <!-- Футер модального окна -->
-
         </div>
     </div>
 </div>
 
 <!-- HTML-код модального окна -->
 <div id="melclarkemodal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <!-- Заголовок модального окна -->
-            <div class="modal-header sportsmen_modal-header">
-                <button type="button" class="close close-popup" data-dismiss="modal"
-                        aria-hidden="true">
-                </button>
-                <h4 class="modal-title">Team</h4>
-            </div>
-            <!-- Основное содержимое модального окна -->
-            <div>
-                <div class="sportsmens_title">
-                    <h6 class="sportsmen_subheader"><span class="fontbold">Mel Clarke</span>
-                        <br>Double Para-Olympian medallist</h6>
+    <div class="modal-center">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Заголовок модального окна -->
+                <div class="modal-header sportsmen_modal-header">
+                    <button type="button" class="close close-popup" data-dismiss="modal"
+                            aria-hidden="true">
+                    </button>
+                    <h4 class="modal-title">Team</h4>
                 </div>
-                <div class="sportsmens_modal-biography">She has also won Gold and Silver medals at the World
-                    Championships.
-                    Due to an arthritic condition Mel has had to use a wheelchair since the age of 11 and lost sight in
-                    her aiming eye and had to remodel her approach physically and mentally.
-                    <br/>
-                    <br>Mel has an amazing story that pupils can relate to due to the age she was whilst adapting to
-                    school,
-                    society and sport. A true hero of resilience and of British Sport.
-                </div>
+                <!-- Основное содержимое модального окна -->
+                <div>
+                    <div class="sportsmens_title">
+                        <h6 class="sportsmen_subheader"><span class="fontbold">Mel Clarke</span>
+                            <br>Double Para-Olympian medallist</h6>
+                    </div>
+                    <div class="sportsmens_modal-biography">She has also won Gold and Silver medals at the World
+                        Championships.
+                        Due to an arthritic condition Mel has had to use a wheelchair since the age of 11 and lost sight
+                        in
+                        her aiming eye and had to remodel her approach physically and mentally.
+                        <br/>
+                        <br>Mel has an amazing story that pupils can relate to due to the age she was whilst adapting to
+                        school,
+                        society and sport. A true hero of resilience and of British Sport.
+                    </div>
 
+
+                </div>
+                <!-- Футер модального окна -->
 
             </div>
-            <!-- Футер модального окна -->
-
         </div>
     </div>
 </div>
 
 <!-- HTML-код модального окна -->
 <div id="altonschoolmodal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <!-- Заголовок модального окна -->
-            <div class="modal-header sportsmen_modal-header">
-                <button type="button" class="close close-popup" data-dismiss="modal"
+    <div class="modal-center">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Заголовок модального окна -->
+                <div class="modal-header sportsmen_modal-header">
+                    <button type="button" class="close close-popup" data-dismiss="modal"
+                            aria-hidden="true">
+                    </button>
+                    <h4 class="modal-title">Testimonial</h4>
+                </div>
+                <!-- Основное содержимое модального окна -->
+                <div class="testimonials-title sportsmens_title">
+                    <h4>Alton Placholder School</h4></div>
+                <div class="sportsmens_modal-biography">"Brendan spoke with enthusiasm and conviction about his own
+                    personal
+                    journey to
+                    being
+                    the best he
+                    could be, and both the children and staff were captivated. He kept everyone engaged
+                    through his
+                    honesty, the details in his stories, and his humour… Read more
+                    <br/>
+                    <br>— Robert Knight, School Director
+                </div>
+                <!-- Футер модального окна -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- HTML-код модального окна -->
+<div id="videoyoutube" class="modal fade">
+    <div class="modal-center">
+        <div class="modal-dialog">
+            <div>
+                <button type="button" class="close close-video-popup" data-dismiss="modal"
                         aria-hidden="true">
                 </button>
-                <h4 class="modal-title">Testimonial</h4>
-            </div>
-            <!-- Основное содержимое модального окна -->
-            <div class="testimonials-title sportsmens_title">
-                <h4>Alton Placholder School</h4></div>
-            <div class="sportsmens_modal-biography">"Brendan spoke with enthusiasm and conviction about his own personal
-                journey to
-                being
-                the best he
-                could be, and both the children and staff were captivated. He kept everyone engaged
-                through his
-                honesty, the details in his stories, and his humour… Read more
-                <br/>
-                <br>— Robert Knight, School Director
-            </div>
-            <!-- Футер модального окна -->
+                <!-- Заголовок модального окна -->
+                <!-- Основное содержимое модального окна -->
+                <div>
+                    <iframe width="560" height="314" src="https://www.youtube.com/embed/AjAyz7-cSKc"
+                            frameborder="0" gesture="media" allow="encrypted-media"
+                            allowfullscreen></iframe>
+                </div>
+                <!-- Футер модального окна -->
 
+            </div>
         </div>
     </div>
 </div>

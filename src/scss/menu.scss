@@ -1,5 +1,4 @@
 @import "variables";
-@import "bootstrap-custom";
 
 .menu_dropdown {
   align-items: center;
@@ -20,6 +19,9 @@
     .caret_custom {
       transform: rotate(180deg);
     }
+  }
+  .custom-droptoggle {
+    text-decoration: none;
   }
 }
 
@@ -59,8 +61,8 @@
 
       &:hover {
         background: $background--secondary;
-        color: $link-color;
-        text-decoration: underline;
+        color: $lnk-color;
+        text-decoration: none;
       }
     }
 
@@ -90,7 +92,7 @@
 
     &-item {
       a {
-        color: $text-color;
+        color: $txt-color;
         min-height: 70px;
         padding-top: 27px;
       }
@@ -99,7 +101,7 @@
       a:hover {
         background: none;
         text-decoration: underline !important;
-        color: $link-hover-color !important;
+        color: $lnk-hover-color !important;
       }
 
       &.active a {
@@ -118,11 +120,7 @@
 
 }
 
-@media (max-width: $screen-md-max) {
-
-}
-
-@media (max-width: $screen-sm-min) {
+@media screen and (max-width: 678px) {
 
   .logo {
     margin-left: 8px;
