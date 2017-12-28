@@ -1,0 +1,90 @@
+@import "variables";
+
+.how_it_works_section {
+  background: #007ABF;
+  min-height: 584px;
+  padding-top: 56px;
+  padding-bottom: 64px;
+
+  h2 {
+    color: #ffffff;
+    margin: 0 0 36px;
+  }
+
+}
+
+.vertical_tabs {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+
+  li {
+    height: 64px;
+    border-bottom: solid 2px #003A6F;
+    font-size: 18px;
+    padding: 20px 24px;
+    width: 100%;
+
+    &:first-child {
+      border-top: solid 2px #003A6F;
+    }
+
+    &.current {
+      background: rgba(0,0,0,0.12);
+      position: relative;
+
+      &:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 30px 0 30px 24px;
+        border-color: transparent transparent transparent rgba(0,0,0,0.12);
+        position: absolute;
+        right: -24px;
+        top: 0;
+      }
+    }
+  }
+}
+
+ul.vertical_tabs{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+ul.vertical_tabs li{
+  display: inline-block;
+  cursor: pointer;
+}
+
+ul.vertical_tabs li.current{
+}
+
+.vertical_tab-content{
+  color: #ffffff;
+  display: none;
+
+  h6 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 24px;
+    padding: 0;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.vertical_tab-content.current{
+  display: inherit;
+}
+
+.how_it_works_right {
+  min-height: 474px;
+  background: url("../src/image/council page.png") no-repeat bottom;
+  background-size: contain;
+}

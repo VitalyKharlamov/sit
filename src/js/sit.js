@@ -64,4 +64,18 @@ $(document).ready(function(){
         $("#"+tab_id).addClass('current');
     })
 
-})
+});
+
+$(document).ready(function(){
+
+    $('ul.vertical_tabs li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul.vertical_tabs li').removeClass('current');
+        $('.vertical_tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#"+tab_id).addClass('current');
+    })
+
+});
