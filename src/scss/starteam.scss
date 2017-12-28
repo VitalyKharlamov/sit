@@ -1,4 +1,3 @@
-@import "bootstrap-custom";
 @import "variables";
 
 .star_team_section {
@@ -50,7 +49,7 @@
 }
 
 
-@media (max-width: $screen-xs-max) {
+@media screen and (max-width: 480px) {
   .star_team_section {
     height: auto;
     padding-top: 0;

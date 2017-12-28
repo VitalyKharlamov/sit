@@ -64,6 +64,12 @@
     height: 48px;
   }
 }
+.slide-button-sportsmens {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  margin-top: -64px;
+}
 
 .modal-width {
   width: 100%;
@@ -93,14 +99,13 @@
   background-image: url(../src/icon/right.svg) !important;
   background-repeat: no-repeat;
   background-position: 50%;
-  right: 2%;
+  right: 8px;
   height: 48px;
-  width: 48px;
+  width: 48px!important;
   background-color: #FFFFFF;
   box-shadow: -1px 4px 4px 0 rgba(0, 0, 0, 0.2);
   border-radius: 24px;
   left: auto;
-  right: 8px;
   margin-top: 8px;
 }
 
@@ -143,34 +148,6 @@
   top: 0;
   width: 100%;
   z-index: 1;
-}
-
-
-
-
-
-.subscribe_section {
-  background: linear-gradient(135deg, #007ABF 0%, #003A6F 100%);
-  text-align: center;
-  width: 100%;
-}
-
-.subscribe-text {
-  color: #FFFFFF;
-  text-align: center;
-  background: transparent;
-  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.12);
-}
-
-.subscribe-text2 {
-  margin-top: 39px !important;
-  margin-bottom: 39px !important;
-  padding-top: 6px;
-  line-height: 58px;
-}
-
-.subscribe-button {
-  margin: 39px auto;
 }
 
 .testimonials-title {

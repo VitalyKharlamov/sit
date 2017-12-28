@@ -1,0 +1,50 @@
+@import "variables";
+
+.subscribe_section {
+  background: linear-gradient(135deg, #007ABF 0%, #003A6F 100%);
+  text-align: center;
+  width: 100%;
+
+  .subscribe-text {
+    color: #FFFFFF;
+    text-align: center;
+    background: transparent;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.12);
+  }
+
+  .subscribe-text2 {
+    margin-top: 39px;
+    margin-bottom: 39px;
+    padding-top: 6px;
+    line-height: 58px;
+  }
+
+  .subscribe-button {
+    margin: 39px auto;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .subscribe_section {
+
+    .subscribe-text2 {
+      font-size: 26px;
+      line-height: 37px;
+      margin-top: 31px;
+      margin-bottom: 31px;
+      display: inline-block;
+    }
+
+    .subscribe-button-padding {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .subscribe-button {
+      margin-top: 24px;
+      margin-bottom: 24px;
+      width: 100%;
+    }
+
+  }
+}
