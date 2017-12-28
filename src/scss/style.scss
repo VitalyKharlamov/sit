@@ -17,6 +17,11 @@
   color: #262626;
 }
 
+.sportsmen_subheader {
+  color: rgba(0,0,0,0.45);
+  line-height: 27px;
+}
+
 .host-event-color {
   color: rgb(0,122,191)!important;
 }
@@ -92,6 +97,7 @@
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   padding-left: 24px;
+  padding-right: 24px;
 }
 
 .sportsmens_modal-biography {
@@ -117,6 +123,39 @@
 }
 }
 
+.close-video-popup {
+  background: url("../src/icon/x.svg") no-repeat center!important;
+
+  right: 8px;
+  height: 48px;
+  width: 48px!important;
+  background-color: #FFFFFF!important;
+  box-shadow: 0 0 0 0;
+  border-radius: 24px;
+  left: auto;
+  filter: none;
+  opacity: 1;
+  border: 1px solid #E6E6E6!important;
+  margin-right: -16px;
+  &:hover {
+    background: url("../src/icon/x_b.svg") no-repeat center!important;
+    background-color: #FFFFFF!important;
+    filter: none;
+    opacity: 1;
+    border: 1px solid #E6E6E6!important;
+  }
+}
+
+.modal-center {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
 .send-button {
   width: 100%;
 }
@@ -132,13 +171,13 @@
   background-repeat: no-repeat;
   background-position: 50%;
   right: 8px;
+  margin-top: 8px;
   height: 48px;
   width: 48px!important;
   background-color: #FFFFFF;
   box-shadow: -1px 4px 4px 0 rgba(0, 0, 0, 0.2);
   border-radius: 24px;
   left: auto;
-  margin-top: 8px;
   filter: none;
   opacity: 1;
 }

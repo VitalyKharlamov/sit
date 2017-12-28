@@ -1,5 +1,4 @@
 @import "variables";
-@import "bootstrap-custom";
 
 .second_slide {
 
@@ -129,7 +128,7 @@
   }
 }
 
-@media (max-width: $screen-md-max) {
+@media screen and (max-width: 998px) {
   .second_slide {
 
     &-content {
@@ -143,7 +142,7 @@
 
 }
 
-@media (max-width: $screen-sm-min) {
+@media screen and (max-width: 480px) {
 
   .second_slide {
     text-align: center;
