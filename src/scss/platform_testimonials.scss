@@ -1,0 +1,37 @@
+@import "variables";
+
+.platform_testimonials_section {
+
+  .testimonial {
+      padding-bottom: 12px;
+  }
+
+  h3 {
+    height: 84px;
+    padding-top: 24px;
+  }
+
+  .testimonial_logo {
+    height: 240px;
+    display: flex;
+    box-shadow: -1px 0 0 0 rgba(0,0,0,0.12);
+
+    img {
+      margin: auto;
+    }
+
+  }
+
+  .testimonial_content {
+    height: 240px;
+    box-shadow: -1px 0 0 0 rgba(0,0,0,0.12);
+  }
+
+  .testimonial_content {
+    padding: 20px 32px;
+
+    h4 {
+      color: $color--blue;
+    }
+  }
+}
