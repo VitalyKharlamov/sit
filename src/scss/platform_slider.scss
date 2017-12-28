@@ -1,8 +1,45 @@
 @import "variables";
 
+
 .platform_slide {
   background: url("../src/image/platform_slide.jpg") no-repeat bottom;
   background-size: cover;
+  display: flex;
   margin-top: 72px;
-  min-height: 600px;
+  min-height: 600px;position: relative;
+}
+
+.slider_content {
+  border-radius: 4px;
+  margin: auto;
+  max-width: 560px;
+  width: 100%;
+  box-shadow: -1px 4px 4px 0 rgba(0,0,0,0.2);
+
+  &-top {
+    background: #fff;
+    padding: 32px 24px;
+    text-align: center;
+
+    h3 {
+      line-height: $line-height-main;
+      margin-bottom: 24px;
+    }
+  }
+
+  &-bottom {
+    background: $background--secondary;
+    padding: 0 24px;
+    text-align: left;
+
+    p {
+      padding: 24px 0;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    a {
+      color: rgba(0,0,0,0.45);
+    }
+  }
 }
