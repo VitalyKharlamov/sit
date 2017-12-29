@@ -5,7 +5,6 @@
   background: url("../src/image/platform_slide.jpg") no-repeat bottom;
   background-size: cover;
   display: flex;
-  margin-top: 72px;
   min-height: 600px;position: relative;
   padding-bottom: 72px;
 }
@@ -43,6 +42,18 @@
     a {
       color: rgba(0,0,0,0.45);
     }
+  }
+}
+
+.slider_button {
+  z-index: 1000;
+}
+
+.platform_slider {
+  margin-top: 72px;
+
+  .oid {
+    margin-top: 12px;
   }
 }
 
