@@ -46,14 +46,17 @@
                             </div>
                             <div class="collapse main-menu" id="navbar-main">
                                 <ul class="nav navbar-nav">
-                                    <li class="main-menu-item"><a class="smooth_scroll" href="#description">PE
-                                        teachers</a>
+                                    <li id="teachers_nav" class="main-menu-item">
+                                        <a class="smooth_scroll" data-tab="teachers" href="#teachers">PE teachers</a>
                                     </li>
-                                    <li class="main-menu-item"><a class="smooth_scroll" href="#description">Schools</a>
+                                    <li id="schools_nav" class="main-menu-item">
+                                        <a class="smooth_scroll" data-tab="schools" href="#schools">Schools</a>
                                     </li>
-                                    <li class="main-menu-item"><a class="smooth_scroll" href="#description">Parents</a>
+                                    <li id="parents_nav" class="main-menu-item">
+                                        <a class="smooth_scroll" data-tab="parents" href="#parents">Parents</a>
                                     </li>
-                                    <li class="main-menu-item"><a class="smooth_scroll" href="#description">Students</a>
+                                    <li id="students_nav" class="main-menu-item">
+                                        <a class="smooth_scroll" data-tab="students" href="#students">Students</a>
                                     </li>
                                     <li class="main-menu-item"><a class="smooth_scroll" href="#how_it_works">How it
                                         works</a></li>
@@ -122,7 +125,8 @@
                         <li class="bottom_navigation-item"><a
                                 href="http://docs.squadintouch.com/security-and-data-protection/">Data protection &
                             Security</a></li>
-                        <li class="bottom_navigation-item"><a class="smooth_scroll" href="#testimonials">Testimonials</a></li>
+                        <li class="bottom_navigation-item"><a class="smooth_scroll"
+                                                              href="#testimonials">Testimonials</a></li>
                     </ul>
                 </div>
             </div>
@@ -144,10 +148,12 @@
             <div class="col-md-7 description_tabs-container">
 
                 <ul class="tabs description_tabs">
-                    <li class="tab-link current" data-tab="teachers" content="teachers_image">For PE Teachers</li>
-                    <li class="tab-link" data-tab="schools" content="schools_image">Schools</li>
-                    <li class="tab-link" data-tab="parents" content="parents_image">Parents</li>
-                    <li class="tab-link" data-tab="students" content="students_image">Students</li>
+                    <li class="tab-link current" id="teachers_tab" data-tab="teachers" content="teachers_image">For PE
+                        Teachers
+                    </li>
+                    <li class="tab-link" id="schools_tab" data-tab="schools" content="schools_image">Schools</li>
+                    <li class="tab-link" id="parents_tab" data-tab="parents" content="parents_image">Parents</li>
+                    <li class="tab-link" id="students_tab" data-tab="students" content="students_image">Students</li>
                 </ul>
 
                 <div id="teachers" class="tab-content description_tabs-content current">
