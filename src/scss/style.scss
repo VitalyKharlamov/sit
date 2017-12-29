@@ -84,6 +84,7 @@
 }
 
 .modal-width {
+  max-width: 752px;
   width: 100%;
 }
 
@@ -130,12 +131,11 @@
   height: 48px;
   width: 48px!important;
   background-color: #FFFFFF!important;
-  box-shadow: 0 0 0 0;
+  box-shadow: -1px 4px 4px 0 rgba(0, 0, 0, 0.2);
   border-radius: 24px;
   left: auto;
   filter: none;
   opacity: 1;
-  border: 1px solid #E6E6E6!important;
   margin-right: -16px;
   &:hover {
     background: url("../src/icon/x_b.svg") no-repeat center!important;
@@ -145,6 +145,24 @@
     border: 1px solid #E6E6E6!important;
   }
 }
+
+.play-button {
+  background: url("../src/icon/play.svg") no-repeat center;
+  height: 65px;
+  width: 65px;
+  background-color: rgba(30,30,30,0.6);
+  //box-shadow: -1px 4px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 32.5px;
+  border: 1px solid #FFFFFF;
+  &-href {
+    width: 65px;
+    position: absolute;
+    margin: 30% 38%;
+    border-radius: 32.5px;
+  }
+}
+
+
 
 .modal-center {
   display: flex;
@@ -222,6 +240,8 @@
   width: 100%;
   z-index: 1;
 }
+
+
 
 .testimonials-title {
   color: rgb(0,122,191);

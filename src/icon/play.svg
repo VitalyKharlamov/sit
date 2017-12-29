@@ -12,7 +12,7 @@
                 <use xlink:href="#path-1"></use>
             </mask>
             <g id="Mask"></g>
-            <g id="1-color/black-87%" mask="url(#mask-2)" fill="#000000" fill-opacity="0.87">
+            <g id="1-color/black-87%" mask="url(#mask-2)" fill="#ffffff" fill-opacity="0.87">
                 <rect id="Rectangle-4-Copy-3" x="0" y="0" width="24" height="24"></rect>
             </g>
         </g>

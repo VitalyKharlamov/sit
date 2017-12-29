@@ -1,0 +1,43 @@
+@import "variables";
+
+
+.software_section {
+  overflow: hidden;
+  position: relative;
+  margin-top: 80px;
+  &-height {
+    height: 408px;
+  }
+
+  .software-margin {
+    margin-top: 32px;
+  }
+
+  .software-macbook {
+    position: absolute;
+    margin-left: 50%;
+    top: 0;
+    img {
+      height: 472px;
+    }
+  }
+
+  .software-button {
+    margin-top: 40px;
+  }
+
+  .visit-product-page {
+    background: linear-gradient(90deg, #F5F5F5 0%, #FFFFFF 100%);
+    height: 104px;
+    padding-top: 41px;
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .software_section {
+
+  }
+}
