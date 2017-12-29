@@ -141,10 +141,10 @@
             <div class="col-md-7 description_tabs-container">
 
                 <ul class="tabs description_tabs">
-                    <li class="tab-link current" data-tab="teachers">For PE Teachers</li>
-                    <li class="tab-link" data-tab="schools">Schools</li>
-                    <li class="tab-link" data-tab="parents">Parents</li>
-                    <li class="tab-link" data-tab="students">Students</li>
+                    <li class="tab-link current" data-tab="teachers" content="teachers_image">For PE Teachers</li>
+                    <li class="tab-link" data-tab="schools" content="schools_image">Schools</li>
+                    <li class="tab-link" data-tab="parents" content="parents_image">Parents</li>
+                    <li class="tab-link" data-tab="students" content="students_image">Students</li>
                 </ul>
 
                 <div id="teachers" class="tab-content description_tabs-content current">
@@ -204,8 +204,13 @@
             </div>
             <!--./TABS-->
 
-            <div class="col-sm-5 col-md-5 hidden-xs second_slide-right">
-                <img src="src/image/slide2_devices.png"/>
+            <div class="col-sm-5 col-md-5 description_image hidden-xs">
+                <!--TAB IMAGES-->
+                <img id="teachers_image" class="tab-image current" src="src/image/slide2_devices.png"/>
+                <img id="schools_image" class="tab-image" src="src/image/schools.svg"/>
+                <img id="parents_image" class="tab-image" src="src/image/parents.jpg"/>
+                <img id="students_image" class="tab-image" src="src/image/students.jpg"/>
+
             </div>
 
         </div>

@@ -56,12 +56,15 @@ $(document).ready(function(){
 
     $('ul.tabs li').click(function(){
         var tab_id = $(this).attr('data-tab');
+        var tab_img_id = $(this).attr('content');
 
         $('ul.tabs li').removeClass('current');
         $('.tab-content').removeClass('current');
+        $('.tab-image').removeClass('current');
 
         $(this).addClass('current');
         $("#"+tab_id).addClass('current');
+        $("#"+tab_img_id).addClass('current');
     })
 
 });
