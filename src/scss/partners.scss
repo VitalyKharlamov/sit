@@ -1,0 +1,28 @@
+@import "variables";
+
+.partners_section {
+  box-shadow: 0 -1px 0 0 #E6E6E6;
+}
+
+.partners_container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 160px;
+  max-width: 100%;
+
+  img {
+    height: auto;
+
+    &:nth-child(2){
+      width: 201px;
+    }
+    &:nth-child(3){
+      width: 273px;
+    }
+    &:nth-child(4){
+      width: 406px;
+    }
+  }
+}
