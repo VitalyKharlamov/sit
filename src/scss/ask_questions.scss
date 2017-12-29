@@ -29,6 +29,8 @@ $contact-section-border: rgba(255, 255, 255, 0.5);
 
   .message-height {
     height: 96px !important;
+    resize: none;
+    box-shadow: none;
   }
 
   .email_container {
@@ -76,9 +78,17 @@ $contact-section-border: rgba(255, 255, 255, 0.5);
 
   .email_container:hover {
     .send_button {
-      background: $color--blue;
+      //background: $color--blue;
       border-color: $color--blue;
-      color: white;
+      //color: white;
+    }
+  }
+
+  .email_container:focus {
+    .send_button {
+      //background: $color--blue;
+      border-color: transparent;
+      //color: white;
     }
   }
 
@@ -91,22 +101,27 @@ $contact-section-border: rgba(255, 255, 255, 0.5);
     &:hover,
     &:focus {
       border-color: $color--blue;
+      box-shadow: none;
 
     }
   }
 
   .send_button {
-    background: #242424;
-    border: solid $contact-section-border;
-    border-width: 1px 1px 1px 0;
-    height: 48px;
+    background: $color--blue;
+    border: none;
+    //border-width: 1px 1px 1px 0;
+    height: 46px;
     line-height: 52px;
     width: 104px;
     border-radius: 0 4px 4px 0;
     color: $contact-section-color;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1px;
+    right: 1px;
+
+    &:disabled {
+      background: #242424;
+    }
 
     //&:active {
     //  background-color: $color--blue;
