@@ -6,10 +6,11 @@
     <title>Squad In touch</title>
     <link rel="stylesheet" href="dist/style.css" type="text/css"/>
 </head>
-<body>
+
+<body data-spy="scroll" data-target="#navbar-main" data-offset="72">
 
 <!--HEADER-->
-<header class="platform_header">
+<header id="home" class="platform_header">
 
     <!--FIXED MENU-->
     <div class="header-nav-fixed">
@@ -21,7 +22,9 @@
 
                     <!--LEFT MENU-->
                     <div class="menu_left">
-                        <img class="logo" src="src/image/logo.svg">
+                        <a class="smooth_scroll" href="#home">
+                            <img class="logo" src="src/image/logo.svg">
+                        </a>
                         <div class="menu_dropdown hidden-xs">
                             <a href="#" class="dropdown-toggle custom-droptoggle" data-toggle="dropdown"><b
                                     class="caret caret_custom"></b>Sports Stars Inspiration Day</a>
@@ -119,7 +122,7 @@
                         <li class="bottom_navigation-item"><a
                                 href="http://docs.squadintouch.com/security-and-data-protection/">Data protection &
                             Security</a></li>
-                        <li class="bottom_navigation-item"><a href="#testimonials">Testimonials</a></li>
+                        <li class="bottom_navigation-item"><a class="smooth_scroll" href="#testimonials">Testimonials</a></li>
                     </ul>
                 </div>
             </div>
@@ -463,7 +466,7 @@
 <!--./INSPIRATION DAY SECTION-->
 
 <!--CONTACT SECTION-->
-<section class="ask_questions contact_section">
+<section id="contact" class="ask_questions contact_section">
     <div class="container">
         <div class="row">
 
@@ -485,7 +488,8 @@
                         <!--EMAIL-->
                         <label for="e-mail">Email</label>
                         <div class="email_container">
-                            <input type="email" class="email-height ask-form-background contact_form-email" id="e-mail"/>
+                            <input type="email" class="email-height ask-form-background contact_form-email"
+                                   id="e-mail"/>
                             <button id="send-email" class="send_button">
                                 Send
                             </button>
@@ -509,7 +513,7 @@
 <!--./CONTACT SECTION-->
 
 <!--FOOTER-->
-<footer id="contact" class="contacts">
+<footer class="contacts">
     <div class="container">
         <div class="row">
             <div class="col-md-2 contacts-margin">
