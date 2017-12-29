@@ -198,6 +198,7 @@
   left: auto;
   filter: none;
   opacity: 1;
+  top: -64px;
 }
 
 .slide-control:hover {
@@ -343,34 +344,4 @@
   }
 }
 
-.contacts {
-  height: 296px;
-  font-size: 16px;
-  img {
-    margin-top: 98px;
-    float: right;
-  }
-  a {
-    color: rgba(0,0,0,0.87)
-  }
-  a:hover {
-    color: #0C65B1;
-  }
-}
-
-.contacts-margin {
-  margin-top: 65px;
-}
-
-.copyright-margin {
-  margin-top: 27px;
-}
-
-.contact-divider-color {
-  color: rgba(0,0,0,30);
-}
-
-.contact-decoration {
-  text-decoration: underline;
-}
 

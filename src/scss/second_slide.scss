@@ -68,7 +68,6 @@
 }
 
 .slide-button {
-  position: absolute;
   width: 100%;
   bottom: 0;
 }
@@ -151,5 +150,37 @@
       max-width: 400px;
     }
   }
-
+.oid {
+  height: 192px;
+  margin-top: 160px;
+  padding-top: 30px;
+  margin-left: 24px;
+  margin-right: 8px;
+}
+  .oidcen {
+    padding-left: 0px;
+    padding-right: 0px;
+    h2 {
+      font-size: 30px;
+    }
+  }
+  .slide_background {
+    min-height: 432px;
+  }
+  .oiddown {
+    margin-top: 0;
+  }
+  .slide-button {
+    bottom: 300px;
+  }
+  .slide-control {
+    margin-right: 8px;
+  }
+  .second_slide-background {
+    background-image: url(../src/image/slide2_se.png);
+    min-height: 432px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
