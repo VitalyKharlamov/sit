@@ -58,8 +58,11 @@ $border-color-primary: #E6E6E6;
     padding: {
       top: 52px;
       left: 16px;
+    };
+
+    strong {
+      font-style: italic;
     }
-  ;
 
     p {
       margin: 0 0 24px;
@@ -76,11 +79,11 @@ $border-color-primary: #E6E6E6;
   img {
     width: auto;
 
-    &:nth-child(1) {
+    &:nth-child(2) {
       height: 510px;
     }
 
-    &:nth-child(2),
+    &:nth-child(1),
     &:nth-child(3),
     &:nth-child(4) {
       height: auto;
