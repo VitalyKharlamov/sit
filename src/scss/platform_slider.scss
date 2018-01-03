@@ -42,6 +42,10 @@
       padding: 24px 0 16px;
       line-height: 1.7;
       margin: 0;
+
+      &:first-child {
+        padding-bottom: 0;
+      }
     }
 
     a {
@@ -65,9 +69,21 @@
 @media screen and (max-width: 767px){
   .platform_slide {
     padding: 24px;
+    min-height: 1px;
+    height: 100vh;
 
     .button--primary {
       max-width: 100%;
     }
+  }
+
+  .slider_content {
+    h3 {
+      font-size: 18px;
+    }
+  }
+
+  .platform_slider {
+    margin-top: 0;
   }
 }
