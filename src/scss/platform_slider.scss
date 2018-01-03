@@ -8,6 +8,10 @@
   min-height: 612px;
   position: relative;
   padding-bottom: 72px;
+
+  &.centered {
+    padding-bottom: 0;
+  }
 }
 
 .slider_content {
