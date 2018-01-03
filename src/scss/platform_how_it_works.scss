@@ -66,18 +66,37 @@ ul.vertical_tabs li.current{
 .vertical_tab-content{
   color: #ffffff;
   display: none;
+  height: 460px;
+  overflow: hidden;
 
-  h6 {
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 24px;
-    padding: 0;
+  .text {
+    height: 232px;
+
+    h6 {
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 24px;
+      padding: 0;
+    }
+
+    p {
+      color: rgba(255,255,255,0.7);
+      font-size: 16px;
+    }
+
   }
 
-  p {
-    font-size: 16px;
+  img {
+    background: #ffffff;
+    width: 100%;
+    height: auto;
+  }
+
+  .img-wrapper {
+    background: #ffffff;
+    padding: 32px 24px 0;
   }
 }
 
@@ -87,6 +106,4 @@ ul.vertical_tabs li.current{
 
 .how_it_works_right {
   min-height: 474px;
-  background: url("../src/image/council page.png") no-repeat bottom;
-  background-size: contain;
 }
