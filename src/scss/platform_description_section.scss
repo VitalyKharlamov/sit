@@ -7,7 +7,9 @@ $border-color-primary: #E6E6E6;
   min-height: 584px;
 
   .description_button {
-    margin-top: 60px;
+    position: absolute;
+    left: 16px;
+    bottom: 0;
   }
 }
 
@@ -53,9 +55,10 @@ $border-color-primary: #E6E6E6;
   }
 
   &-content {
-    min-height: 372px;
+    min-height: 412px;
     font-size: 16px;
     line-height: 24px;
+    position: relative;
     padding: {
       top: 52px;
       left: 16px;
