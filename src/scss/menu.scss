@@ -76,6 +76,54 @@
   justify-content: space-between;
 }
 
+.caret_custom {
+  margin: 0 8px;
+}
+
+// TODO Put in order this class
+.main-menu-dropdown {
+  list-style: none;
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+  border: none!important;
+  box-shadow: -1px 0 0 0 rgba(0, 0, 0, 0.45)!important;
+  margin: 0;
+  padding: 0!important;
+
+  &-item {
+    background: $background--secondary!important;
+  }
+
+  li > a {
+    background-color: $background--secondary!important;
+    box-shadow: none;
+    border-bottom: solid 1px #E6E6E6;
+    font-size: 16px;
+    height: 48px;
+    min-height: 1px!important;
+    padding: 14px 0 0 40px!important;
+    margin: 0;
+
+    &.active {
+      color: rgba(0, 0, 0, 0.3);
+      background: $background--secondary;
+
+      &:hover {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.3);
+        background: $background--secondary!important;
+      }
+    }
+
+    &:hover {
+      background: $background--secondary!important;
+      color: $lnk-color;
+      text-decoration: none;
+    }
+  }
+}
+
 .menu_right {
 
   .navbar-custom {
@@ -105,13 +153,25 @@
       }
 
       &.active a {
-        background: none;
+        background: none!important;
         box-shadow: none;
         color: #0C65B1 !important;
 
         &:focus,
         &:hover {
           background: none;
+        }
+      }
+
+      &.open {
+        box-shadow: -1px 0 0 0 rgba(0, 0, 0, 0.45);
+
+        a {
+          background: #ffffff!important;
+        }
+
+        .main-menu-dropdown-item {
+          background: $background--secondary!important;
         }
       }
 
