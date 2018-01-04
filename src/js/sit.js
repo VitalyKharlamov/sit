@@ -41,7 +41,11 @@ $(document).ready(function() {
         // Open selected tab from menu
         if ($(this).attr('data-tab')) {
             var tab_id = $(this).attr('data-tab');
-            manageTabs(tab_id);
+            if ($(this).attr('data-type') === "helps") {
+                manageTabs(tab_id);
+            } else  {
+                manageVerticalTabs(tab_id);
+            }
         }
 
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -71,6 +75,14 @@ function manageTabs(tab_id) {
     $("#"+tab_id + "_nav").addClass('active');
 }
 
+function manageVerticalTabs(tab_id) {
+    $('ul.vertical_tabs li').removeClass('current');
+    $('.vertical_tab-content').removeClass('current');
+
+    $("#v-"+tab_id).addClass('current');
+    $("#"+tab_id).addClass('current');
+}
+
 $(document).ready(function(){
 
     $('ul.tabs li').click(function(){
@@ -80,12 +92,12 @@ $(document).ready(function(){
         $('ul.tabs li').removeClass('current');
         $('.tab-content').removeClass('current');
         $('.tab-image').removeClass('current');
-        $('#navbar-main li').removeClass('active');
+        // $('#navbar-main li').removeClass('active');
 
         $(this).addClass('current');
         $("#"+tab_id).addClass('current');
         $("#"+tab_img_id).addClass('current');
-        $("#"+tab_id + "_nav").addClass('active');
+        // $("#"+tab_id + "_nav").addClass('active');
     })
 
 });
