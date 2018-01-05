@@ -32,7 +32,7 @@ function sendMessage(getUrl) {
         type: 'GET',
         success: function () {
             console.log('Success!');
-            alert ('thank_you');
+            $('#email_has_been_send').modal('show');
             //window.location.href = 'index.html';
         },
         error: function () {
