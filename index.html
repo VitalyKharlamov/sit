@@ -158,10 +158,12 @@
                                 <div class="slider_content-bottom hidden-xs">
 
                                     <p>
-                                        "Squad In Touch provides everything we need to organise school teams and clubs easily.
+                                        "Squad In Touch provides everything we need to organise school teams and clubs
+                                        easily.
                                         Anything that is not a feature can be sorted out effectively and the support
                                         we have been given setting this up has been great.
-                                        This really is one of the best platforms out there to promote school sport and the time
+                                        This really is one of the best platforms out there to promote school sport and
+                                        the time
                                         saving potential alone is worth the subscription fee"
                                         <!--<a href="#platform_read_more" data-toggle="modal">Read more</a>-->
                                     </p>
@@ -283,7 +285,8 @@
             <div class="row">
                 <div>
                     <!-- Карусель -->
-                    <div id="carousel-sportsmens" class="carousel slide" data-interval="0" data-ride="carousel" data-type="multi">
+                    <div id="carousel-sportsmens" class="carousel slide" data-interval="0" data-ride="carousel"
+                         data-type="multi">
                         <!-- Слайды карусели -->
                         <div class="carousel-inner">
                             <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
@@ -326,7 +329,8 @@
                                                     from the 2004 Athens Games</br></h6>
                                             </div>
                                             <div class="sportsmens_biography">Leon has transitioned into commentating
-                                                for the BBC and has become a successful author, specialising in mentoring.
+                                                for the BBC and has become a successful author, specialising in
+                                                mentoring.
                                             </div>
 
 
@@ -405,8 +409,10 @@
                                                     High Jumpers ever</br></h6>
                                             </div>
                                             <div class="sportsmens_biography">
-                                                Martyn is an Olympic finalist as well as a Commonwealth games medallist with a personal best of 2.3m.
-                                                Martyn is the perfect example of having a ‘plan B’ away from the athletics track.
+                                                Martyn is an Olympic finalist as well as a Commonwealth games medallist
+                                                with a personal best of 2.3m.
+                                                Martyn is the perfect example of having a ‘plan B’ away from the
+                                                athletics track.
                                                 He…
                                                 <span><a href="#martynmodal" data-toggle="modal"> Read more</a></span>
                                             </div>
@@ -598,7 +604,8 @@
                                                     from the 2004 Athens Games</br></h6>
                                             </div>
                                             <div class="sportsmens_biography">Leon has transitioned into commentating
-                                                for the BBC and has become a successful author, specialising in mentoring.
+                                                for the BBC and has become a successful author, specialising in
+                                                mentoring.
                                             </div>
 
 
@@ -725,7 +732,8 @@
                 <h1 class="subscribe-text2">Subscribe now to get 25% discount</h1>
             </div>
             <div class="col-md-12 subscribe-button-padding">
-                <button class="button--default subscribe-button" href="#myModal" data-toggle="modal">Event Enquiry</button>
+                <button class="button--default subscribe-button" href="#myModal" data-toggle="modal">Event Enquiry
+                </button>
             </div>
         </div>
     </div>
@@ -764,7 +772,8 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-2 testimonial-school-section">
-                                    <img class="testimonial-school" src="src/image/WE_blazon.png" alt="William Edwards"/>
+                                    <img class="testimonial-school" src="src/image/WE_blazon.png"
+                                         alt="William Edwards"/>
                                 </div>
                                 <div class="col-md-4 testimonial-info">
                                     <div class="testimonials-title">
@@ -809,7 +818,7 @@
                                     to be the best version of you. The pupils enjoyed the activities that were delivered
                                     and the serious element of his message was well received."
                                     <!--<span><a-->
-                                            <!--href="#altonschoolmodal" data-toggle="modal"> Read more</a></span>-->
+                                    <!--href="#altonschoolmodal" data-toggle="modal"> Read more</a></span>-->
                                     <br/>
                                     <br>— Olivia Williams, PE Teacher.
                                 </div>
@@ -943,7 +952,7 @@
                         <div class="email_container">
                             <input type="email" class="email-height ask-form-background contact_form-email"
                                    id="e-mail"/>
-                            <button id="send-email" class="send_button">
+                            <button id="send-email" class="send_button" onclick="sendmail()">
                                 Send
                             </button>
                         </div>
@@ -966,7 +975,7 @@
 <!--./CONTACT SECTION-->
 
 <!--Contacts-->
-<section id="contact" class="contacts">
+<footer id="contact" class="contacts">
     <div class="container">
         <div class="row">
             <div class="col-md-2 contacts-margin">
@@ -994,14 +1003,14 @@
         <div class="copyright-margin">Copyright © 2017 Squad In Touch</div>
     </div>
 
-</section>
+</footer>
 
 <!--./Contacts-->
 
 <!-- Модальное оно Host Event -->
 
 <div id="myModal" class="modal fade">
-    <div class="modal-center" data-dismiss="modal">
+    <div class="modal-center">
         <div class="modal-dialog modal-width">
             <div class="modal-content ">
                 <!-- Заголовок модального окна -->
@@ -1016,27 +1025,28 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="form-group modal-hod">
-                                <label for="email" class="h4">Your email</label>
-                                <input type="email" class="form-control olympian_form-height" id="email"
+                                <label for="mail" class="h4">Your email</label>
+                                <input type="email" class="form-control olympian_form-height" id="mail"
                                        placeholder="Enter email" required>
                             </div>
                             <div class="form-group modal-hod">
-                                <label for="name" class="h4">School name</label>
-                                <input type="text" class="form-control olympian_form-height" id="name"
+                                <label for="school_name" class="h4">School name</label>
+                                <input type="text" class="form-control olympian_form-height" id="school_name"
                                        placeholder="Enter school name" required>
                             </div>
                             <div class="form-group modal-hod">
                                 <div class="form-group">
-                                    <label for="message" class="h4 ">Additional notes
+                                    <label for="additional_notes" class="h4 ">Additional notes
                                         (optional)</label>
-                                    <textarea id="message" class="form-control olympian_form-height" rows="5"
+                                    <textarea id="additional_notes" class="form-control olympian_form-height" rows="5"
                                               placeholder="Enter your message"
                                               required></textarea>
                                 </div>
                             </div>
                             <div class="form-group modal-hod">
                                 <button type="submit" id="form-submit"
-                                        class="button--primary send-button">
+                                        class="button--primary send-button"
+                                        onclick="eventEnquiry()">
                                     Submit
                                 </button>
                                 <div id="msgSubmit" class="h3 text-center hidden">
@@ -1076,7 +1086,8 @@
                             High Jumper ever</br></h6>
                     </div>
                     <div class="sportsmens_modal-biography">
-                        Martyn is an Olympic finalist as well as a Commonwealth games medallist with a personal best of 2.3m.
+                        Martyn is an Olympic finalist as well as a Commonwealth games medallist with a personal best of
+                        2.3m.
                         Martyn is the perfect example of having a ‘plan B’ away from the athletics track.
                         He graduated from psychology and has recently started a law degree. He has interests in film and
                         an
