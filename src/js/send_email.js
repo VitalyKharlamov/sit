@@ -17,6 +17,7 @@ function sendMessage(getUrl) {
     $.ajax({
         url: getUrl,
         type: 'GET',
+        Origin: "127.0.0.1",
         success: function () {
             console.log('Success!');
             alert ('thank_you');
