@@ -1,19 +1,19 @@
 /**
  * Created by vitaly on 07.12.17.
  */
-$("#contactForm").submit(function(event){
-	// cancels the form submission
-	event.preventDefault();
-	submitForm();
-	console.log("submit!")
-});
+// $("#contact_form").submit(function(event){
+// 	// cancels the form submission
+// 	event.preventDefault();
+// 	submitForm();
+// 	console.log("submit!")
+// });
 
 function submitForm(){
-	console.log("submitForm")
+	console.log("submitForm");
 	// Initiate Variables With Form Content
-	var name = $("#name").val();
-	var email = $("#email").val();
-	var message = $("#message").val();
+	var name = "NAME";
+	var email = $("#e-mail").val();
+	var message = $("#messages").val();
 
 	$.ajax({
 		type: "POST",
