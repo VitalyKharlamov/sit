@@ -16,7 +16,6 @@ LOG_FILE = '/var/www/html/sending.log'
 
 email = form.getvalue('email')
 message = form.getvalue('message')
-isNotes = form.getvalue('isNotes')
 notes = form.getvalue('notes')
 send_to = form.getvalue('send_to')
 
@@ -44,13 +43,10 @@ def build_body():
     n = "\r\n"
     msg = "Squad In Touch" + n
 
-    if isNotes:
-        msg = msg + "Event Enquiry" + n
-
     msg = msg + "Email: " + email + n
     msg = msg + "Message: " + message + n
 
-    if notes is not:
+    if notes is not None:
         msg = msg + "Additional notes: " + notes + n
 
     return msg
