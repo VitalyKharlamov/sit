@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 form = cgi.FieldStorage()
 
 SUBJECT = "Squad in touch"
-FROM_ADDRESS = form.getvalue('email')
+FROM_ADDRESS = "omsksec@keysystems.ru"
 TO_ADDRESS = "heavyvetal1988@gmail.com"
 SMTP_PASS = "xp9uyE15"
 SMTP_SERVER = "mx3.keysystems.ru"
@@ -16,6 +16,8 @@ LOG_FILE = '/var/www/html/sending.log'
 
 email = form.getvalue('email')
 message = form.getvalue('message')
+isNotes = form.getvalue('isNotes')
+notes = form.getvalue('notes')
 send_to = form.getvalue('send_to')
 
 
@@ -40,9 +42,16 @@ def send_answer(code, text):
 
 def build_body():
     n = "\r\n"
-    msg = "New User Request!" + n
+    msg = "Squad In Touch" + n
+
+    if isNotes:
+        msg = msg + "Event Enquiry" + n
+
     msg = msg + "Email: " + email + n
     msg = msg + "Message: " + message + n
+
+    if notes is not:
+        msg = msg + "Additional notes: " + notes + n
 
     return msg
 
