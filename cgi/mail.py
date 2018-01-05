@@ -44,13 +44,13 @@ def build_body():
     n = "\r\n"
     msg = "Squad In Touch" + n
 
-    if isNotes is not None:
+    if isNotes:
         msg = msg + "Event Enquiry" + n
 
     msg = msg + "Email: " + email + n
     msg = msg + "Message: " + message + n
 
-    if notes is not None:
+    if notes is not:
         msg = msg + "Additional notes: " + notes + n
 
     return msg
