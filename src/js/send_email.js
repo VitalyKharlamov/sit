@@ -33,6 +33,8 @@ function sendMessage(getUrl) {
         success: function () {
             console.log('Success!');
             $('#email_has_been_send').modal('show');
+            $('#e-mail').val(' ');
+            $('#messages').val(' ');
             //window.location.href = 'index.html';
         },
         error: function () {
