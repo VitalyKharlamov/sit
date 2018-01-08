@@ -7,11 +7,12 @@ from email.mime.text import MIMEText
 form = cgi.FieldStorage()
 
 SUBJECT = "Squad in touch"
-FROM_ADDRESS = "omsksec@keysystems.ru"
-TO_ADDRESS = "heavyvetal1988@gmail.com"
-SMTP_PASS = "xp9uyE15"
-SMTP_SERVER = "mx3.keysystems.ru"
-SMTP_PORT = 25
+FROM_ADDRESS = "noreply@squadintouch.com"
+TO_ADDRESS = "heavyvetal88@mail.ru"
+SMTP_USER = "AKIAJKXYMG4P47TFNSPQ"
+SMTP_PASS = "ApzNB+hsCEw+B6o8/OSpgsD3NEnmq9+vtJaxsz2FzsR9"
+SMTP_SERVER = "email-smtp.eu-west-1.amazonaws.com"
+SMTP_PORT = 465
 LOG_FILE = '/var/www/html/sending.log'
 
 email = form.getvalue('email')
@@ -67,7 +68,7 @@ def send_mail():
     msg.attach(MIMEText(build_body(), 'plain'))
 
     server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
-    server.login(FROM_ADDRESS, SMTP_PASS)
+    server.login("AKIAJKXYMG4P47TFNSPQ", SMTP_PASS)
     text = msg.as_string()
     server.sendmail(FROM_ADDRESS, msg['To'], text)
     server.quit()
