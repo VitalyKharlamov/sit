@@ -65,19 +65,6 @@
                                         </ul>
                                     </li>
 
-                                    <!--<li id="teachers_nav" class="main-menu-item">-->
-                                    <!--<a class="smooth_scroll" data-tab="teachers" href="#teachers">PE teachers</a>-->
-                                    <!--</li>-->
-                                    <!--<li id="schools_nav" class="main-menu-item">-->
-                                    <!--<a class="smooth_scroll" data-tab="schools" href="#schools">Schools</a>-->
-                                    <!--</li>-->
-                                    <!--<li id="parents_nav" class="main-menu-item">-->
-                                    <!--<a class="smooth_scroll" data-tab="parents" href="#parents">Parents</a>-->
-                                    <!--</li>-->
-                                    <!--<li id="students_nav" class="main-menu-item">-->
-                                    <!--<a class="smooth_scroll" data-tab="students" href="#students">Students</a>-->
-                                    <!--</li>-->
-
                                     <li class="main-menu-item">
                                         <a href="#" data-toggle="dropdown">
                                             <b class="caret caret_custom"></b>
@@ -121,7 +108,8 @@
                                     <li class="main-menu-item"><a class="smooth_scroll" href="#testimonials">Testimonials</a>
                                     </li>
                                     <li class="main-menu-item"><a class="smooth_scroll" href="#contact">Contact</a></li>
-                                    <li class="main-menu-item active"><a href="https://app.squadintouch.com">Sign up /
+                                    <li class="main-menu-item active"><a href="https://app.squadintouch.com"
+                                                                         target="_blank">Sign up /
                                         Sign in</a>
                                     </li>
                                 </ul>
@@ -189,8 +177,11 @@
                                 <h2> Sports Stars Inspiration Day</h2>
                                 <h5>Helping develop PE and Sport through <br>Inspiration,
                                     Aspiration and Engagement.</h5>
-                                <button class="button--primary" href="#host_event" data-toggle="modal">Event Enquiry
-                                </button>
+                                <a href="index.html">
+                                    <button class="button--primary">
+                                        Learn more
+                                    </button>
+                                </a>
                             </div>
                             <div class="container oiddown">
 
@@ -233,14 +224,11 @@
                 <div class="col-md-12">
                     <ul class="bottom_navigation">
                         <li class="bottom_navigation-item">
-                            <a href="#how_it_works">See how it works</a>
+                            <a href="#video_youtube" data-toggle="modal">Show video</a>
                         </li>
                         <li class="bottom_navigation-item">
                             <a href="http://docs.squadintouch.com/security-and-data-protection/">Data protection &
                                 Security</a>
-                        </li>
-                        <li class="bottom_navigation-item">
-                            <a class="smooth_scroll" href="#testimonials">Testimonials</a>
                         </li>
                     </ul>
                 </div>
@@ -281,12 +269,11 @@
                     <br>
                     Squad In Touch helps PE teachers: <br>
                     • Organise their fixtures calendar <br>
-                    • Submit game results right from the pitches <br>
                     • Keep records of pupils performance and discipline up to date <br>
                     • Communicate with parents and pupils <br>
                     • Improve PE practice getting in touch with other PE teachers and our team of Olympians
 
-                    <a href="https://app.squadintouch.com/#register">
+                    <a href="https://app.squadintouch.com/#register" target="_blank">
                         <button class="button--primary description_button">Sign up for free</button>
                     </a>
                 </div>
@@ -306,7 +293,7 @@
                     • Develop positive school/parent relationships <br>
                     • Provide engaging and successful environment for pupils, parents and staff
 
-                    <a href="https://app.squadintouch.com/#register">
+                    <a href="https://app.squadintouch.com/#register" target="_blank">
                         <button class="button--primary description_button">TRY 30 DAYS for FREE</button>
                     </a>
                 </div>
@@ -324,7 +311,7 @@
                     • Child’s performance and progress tracking <br>
                     • Tools for communicating with school PE staff and other parents
 
-                    <a href="https://app.squadintouch.com/#register">
+                    <a href="https://app.squadintouch.com/#register" target="_blank">
                         <button class="button--primary description_button">Sign up for free</button>
                     </a>
                 </div>
@@ -341,7 +328,7 @@
                     • Tools for communicating with school PE staff and other students <br>
                     • Free app to share photos of events <br>
 
-                    <a href="https://app.squadintouch.com/#register">
+                    <a href="https://app.squadintouch.com/#register" target="_blank">
                         <button class="button--primary description_button">Sign up for free</button>
                     </a>
                 </div>
@@ -352,10 +339,9 @@
             <div class="col-sm-5 col-md-5 description_image hidden-xs">
                 <!--TAB IMAGES-->
                 <img id="teachers_image" class="tab-image current" src="src/image/teacher.png"/>
-                <img id="schools_image" class="tab-image" src="src/image/slide2_devices.png"/>
-                <img id="parents_image" class="tab-image" src="src/image/parents.jpg"/>
-                <img id="students_image" class="tab-image" src="src/image/students.jpg"/>
-
+                <img id="schools_image" class="tab-image" src="src/image/HH_Schools.png"/>
+                <img id="parents_image" class="tab-image" src="src/image/HH_Parents.png"/>
+                <img id="students_image" class="tab-image" src="src/image/HH_Students.png"/>
             </div>
 
         </div>
@@ -398,9 +384,9 @@
                                 • Keep your school sports news up to date
                             </p>
                         </div>
-                        <div class="img-wrapper">
-                            <img src="src/image/slide2_devices.png"/>
-                        </div>
+                        <a class="img-wrapper show_img_popup" content="src/image/HW_01_Schools_web.png">
+                            <img src="src/image/HW_01_Schools_web.png"/>
+                        </a>
                     </div>
                     <div id="tab-2" class="vertical_tab-content">
                         <div class="text">
@@ -414,7 +400,9 @@
                                 automatically
                             </p>
                         </div>
-                        <img src="src/image/how_it_works_2.jpg"/>
+                        <a class="show_img_popup" content="src/image/HW_02_Schools_public_web.png">
+                            <img src="src/image/HW_02_Schools_public_web.png"/>
+                        </a>
                     </div>
                     <div id="tab-3" class="vertical_tab-content">
                         <div class="text">
@@ -428,7 +416,9 @@
                                 • Send notifications to parents and students about last minutes changes
                             </p>
                         </div>
-                        <img src="src/image/how_it_works_3.jpg"/>
+                        <a class="show_img_popup" content="src/image/HW_03_Schools_mobile.png">
+                            <img src="src/image/HW_03_Schools_mobile.png"/>
+                        </a>
                     </div>
                     <div id="tab-4" class="vertical_tab-content">
                         <div class="text">
@@ -442,7 +432,9 @@
                                 • Communicate with school PE staff as well as other parents and students
                             </p>
                         </div>
-                        <img src="src/image/how_it_works_4.jpg"/>
+                        <a class="show_img_popup" content="src/image/HW_04_Parents_mobile.png">
+                            <img src="src/image/HW_04_Parents_mobile.png"/>
+                        </a>
                     </div>
                     <div id="tab-5" class="vertical_tab-content">
                         <div class="text">
@@ -455,7 +447,9 @@
                                 • Printable and email-adjusted PDFs with overall tournament results
                             </p>
                         </div>
-                        <img src="src/image/how_it_works_5.jpg"/>
+                        <a class="show_img_popup" content="src/image/HW_05_Tournaments.png">
+                            <img src="src/image/HW_05_Tournaments.png"/>
+                        </a>
                     </div>
                     <div id="tab-6" class="vertical_tab-content">
                         <div class="text">
@@ -468,7 +462,9 @@
                                 • Dedicated web-site for each event hosted on Squad In Touch servers for free
                             </p>
                         </div>
-                        <img src="src/image/how_it_works_6.jpg">
+                        <a class="show_img_popup" content="src/image/HW_06_SSP.png">
+                            <img src="src/image/HW_06_SSP.png">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -599,8 +595,11 @@
                         <h2> Sports Stars Inspiration Day</h2>
                         <h5>Helping develop PE and Sport through <br>Inspiration,
                             Aspiration and Engagement.</h5>
-                        <button class="button--primary" href="#host_event" data-toggle="modal">Event Enquiry
-                        </button>
+                        <a href="index.html">
+                            <button class="button--primary">
+                                Learn more
+                            </button>
+                        </a>
                     </div>
                     <div class="container oiddown">
 
@@ -704,7 +703,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="copyright-margin">Copyright © 2017 Squad In Touch</div>
+        <div class="copyright-margin">Copyright © 2015-2017 Squad In Touch</div>
     </div>
 
 </footer>
@@ -813,6 +812,42 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal_with_img" role="dialog">
+    <div class="modal-center">
+        <div class="modal_img-container">
+
+            <button type="button" class="close_popup-btn" data-dismiss="modal"
+                    aria-hidden="true">
+            </button>
+            <div>
+                <img id="popupImage" class="modal_img" alt="how it works"/>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- YOUTUBE -->
+<div id="video_youtube" class="modal fade">
+    <div class="modal-center" data-dismiss="modal">
+        <div class="modal-dialog">
+            <div>
+                <button type="button" class="close close-video-popup" data-dismiss="modal"
+                        aria-hidden="true">
+                </button>
+                <!-- Заголовок модального окна -->
+                <!-- Основное содержимое модального окна -->
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jeSW-12OMEU" frameborder="0"
+                            gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <!-- Футер модального окна -->
+
             </div>
         </div>
     </div>

@@ -84,6 +84,17 @@ $(document).ready(function(){
 
 });
 
+// Show popup with image
+// For adding image dynamically set attribute content with image link for a.show_img_popup
+$(document).ready(function(){
+    $('a.show_img_popup').click(function(){
+        var image = $(this).attr("content");
+        $('#popupImage').attr("src",image);
+        $('#modal_with_img').modal('show');
+
+    })
+});
+
 //Carousel script
 
 $('.carousel[data-type="multi"] .item').each(function () {

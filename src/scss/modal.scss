@@ -1,0 +1,35 @@
+
+.modal_img {
+  max-width: 100%;
+  height: auto;
+
+  &-container {
+    background: #ffffff;
+    padding: 8px;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+  }
+}
+
+.close_popup-btn {
+  background: #ffffff url("../src/icon/x.svg") no-repeat center;
+  position: absolute;
+  right: -56px;
+  height: 48px;
+  width: 48px;
+  box-shadow: -1px 4px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
+  border: none;
+  left: auto;
+  filter: none;
+  opacity: 1;
+
+  &:hover {
+    background: #ffffff url("../src/icon/x_b.svg") no-repeat center;
+    filter: none;
+    opacity: 1;
+    border: 1px solid #E6E6E6;
+  }
+}
