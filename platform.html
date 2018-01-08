@@ -384,9 +384,9 @@
                                 • Keep your school sports news up to date
                             </p>
                         </div>
-                        <div class="img-wrapper">
+                        <a class="img-wrapper show_img_popup" content="src/image/HW_01_Schools_web.png">
                             <img src="src/image/HW_01_Schools_web.png"/>
-                        </div>
+                        </a>
                     </div>
                     <div id="tab-2" class="vertical_tab-content">
                         <div class="text">
@@ -400,7 +400,9 @@
                                 automatically
                             </p>
                         </div>
-                        <img src="src/image/HW_02_Schools_public_web.png"/>
+                        <a class="show_img_popup" content="src/image/HW_02_Schools_public_web.png">
+                            <img src="src/image/HW_02_Schools_public_web.png"/>
+                        </a>
                     </div>
                     <div id="tab-3" class="vertical_tab-content">
                         <div class="text">
@@ -414,7 +416,9 @@
                                 • Send notifications to parents and students about last minutes changes
                             </p>
                         </div>
-                        <img src="src/image/HW_03_Schools_mobile.png"/>
+                        <a class="show_img_popup" content="src/image/HW_03_Schools_mobile.png">
+                            <img src="src/image/HW_03_Schools_mobile.png"/>
+                        </a>
                     </div>
                     <div id="tab-4" class="vertical_tab-content">
                         <div class="text">
@@ -428,7 +432,9 @@
                                 • Communicate with school PE staff as well as other parents and students
                             </p>
                         </div>
-                        <img src="src/image/HW_04_Parents_mobile.png"/>
+                        <a class="show_img_popup" content="src/image/HW_04_Parents_mobile.png">
+                            <img src="src/image/HW_04_Parents_mobile.png"/>
+                        </a>
                     </div>
                     <div id="tab-5" class="vertical_tab-content">
                         <div class="text">
@@ -441,7 +447,9 @@
                                 • Printable and email-adjusted PDFs with overall tournament results
                             </p>
                         </div>
-                        <img src="src/image/HW_05_Tournaments.png"/>
+                        <a class="show_img_popup" content="src/image/HW_05_Tournaments.png">
+                            <img src="src/image/HW_05_Tournaments.png"/>
+                        </a>
                     </div>
                     <div id="tab-6" class="vertical_tab-content">
                         <div class="text">
@@ -454,7 +462,9 @@
                                 • Dedicated web-site for each event hosted on Squad In Touch servers for free
                             </p>
                         </div>
-                        <img src="src/image/HW_06_SSP.png">
+                        <a class="show_img_popup" content="src/image/HW_06_SSP.png">
+                            <img src="src/image/HW_06_SSP.png">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -807,6 +817,20 @@
     </div>
 </div>
 
+<div class="modal fade" id="modal_with_img" role="dialog">
+    <div class="modal-center">
+        <div class="modal_img-container">
+
+            <button type="button" class="close_popup-btn" data-dismiss="modal"
+                    aria-hidden="true">
+            </button>
+            <div>
+                <img id="popupImage" class="modal_img" alt="how it works"/>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <!-- YOUTUBE -->
 <div id="video_youtube" class="modal fade">
