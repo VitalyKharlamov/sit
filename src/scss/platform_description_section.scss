@@ -41,7 +41,7 @@ $border-color-primary: #E6E6E6;
     }
 
     &:nth-child(1) {
-      width: 216px;
+      width: 180px;
     }
     &:nth-child(2) {
       width: 127px;
@@ -98,8 +98,12 @@ $border-color-primary: #E6E6E6;
       margin-left: auto;
     }
 
-    &:nth-child(1),
     &:nth-child(4) {
+      height: 420px;
+      margin-left: 112px;
+    }
+
+    &:nth-child(1) {
       height: auto;
       width: 100%;
     }
