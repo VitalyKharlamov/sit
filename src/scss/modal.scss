@@ -1,22 +1,26 @@
 
+// IMAGES
 .modal_img {
   max-width: 100%;
   height: auto;
 
   &-container {
-    background: #ffffff;
     padding: 8px;
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
   }
+}
+
+.show_img_popup {
+  cursor: zoom-in;
 }
 
 .close_popup-btn {
   background: #ffffff url("../src/icon/x.svg") no-repeat center;
   position: absolute;
-  right: -56px;
+  right: 0;
   height: 48px;
   width: 48px;
   box-shadow: -1px 4px 4px 0 rgba(0, 0, 0, 0.2);
