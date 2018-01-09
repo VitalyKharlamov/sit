@@ -105,10 +105,11 @@
   }
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 768px) {
   .testimonial_section {
     .testimonial-school {
       margin-left: 8px;
+      float: none;
     }
     .testimonial2-school-section {
 
@@ -116,6 +117,8 @@
       padding-right: 16px;
       margin-left: 8px;
       padding-left: 0;
+      flex: 1;
+      text-align: center;
     }
     .testimonial-background {
       display: flex;
@@ -129,7 +132,13 @@
     }
 
     .testimonial3-background {
+      display: flex;
       min-height: 120px;
+      flex: 1;
+      //padding-top: 3%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
     .testimonial-mobile {
