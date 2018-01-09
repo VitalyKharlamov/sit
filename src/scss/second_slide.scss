@@ -150,9 +150,13 @@
       max-width: 400px;
     }
   }
+
+  .mar-slide {
+    margin-top: 0;
+  }
 .oid {
   height: 192px;
-  margin-top: 160px;
+  margin-bottom: 64px;
   padding-top: 30px;
   margin-left: 24px;
   margin-right: 8px;
@@ -165,13 +169,24 @@
     }
   }
   .slide_background {
-    min-height: 432px;
+    min-height: 1px;
+    height: 100vh;
+    align-items: end;
+    display: flex;
+    position: relative;
+  }
+  .first_slide {
+    min-height: 1px;
+    height: 100vh;
+    align-items: end;
   }
   .oiddown {
     margin-top: 0;
   }
   .slide-button {
     bottom: 300px;
+    position: absolute;
+    top:100vh;
   }
   .slide-control {
     margin-right: 8px;

@@ -68,7 +68,7 @@
 
 @media screen and (max-width: 767px){
   .platform_slide {
-    padding: 24px;
+    padding: 16px;
     min-height: 1px;
     height: 100vh;
     align-items: end;
@@ -86,6 +86,8 @@
 
     &-top {
       padding: 20px;
+      margin-bottom: 64px;
+      border-radius: 4px;
     }
   }
 
