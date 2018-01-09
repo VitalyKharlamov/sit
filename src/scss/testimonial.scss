@@ -1,6 +1,19 @@
 @import "variables";
 
 .testimonial_section {
+  .testimonials-title {
+    color: rgb(0,122,191);
+    margin-top: 16px;
+    line-height: 35px;
+  }
+
+  .testimonial-bottom {
+    height: 80px;
+    h3 {
+      padding-top: 8px;
+      margin-bottom: 22px;
+    }
+  }
   .testimonial-school {
     max-width: 144px;
     margin-top: 16px;
@@ -75,24 +88,82 @@
     bottom: 0;
     margin-top: 6.5px;
   }
+  .play-button {
+    background: url("../src/icon/play.svg") no-repeat center;
+    height: 65px;
+    width: 65px;
+    background-color: rgba(30,30,30,0.6);
+    //box-shadow: -1px 4px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 32.5px;
+    border: 1px solid #FFFFFF;
+    &-href {
+      width: 65px;
+      position: absolute;
+      margin: 30% 38%;
+      border-radius: 32.5px;
+    }
+  }
 }
 
 @media screen and (max-width: 678px) {
-  .testimonial2-school-section {
+  .testimonial_section {
+    .testimonial-school {
+      margin-left: 8px;
+    }
+    .testimonial2-school-section {
 
-    min-height: 140px;
-    padding-right: 16px;
-    margin-left: 8px;
-    padding-left: 0;
-    max-width: 176px;
+      min-height: 140px;
+      padding-right: 16px;
+      margin-left: 8px;
+      padding-left: 0;
+    }
+    .testimonial-background {
+      display: flex;
+      background-image: url(../src/image/testimponial1.jpg);
+      min-height: 120px;
+      flex: 1;
+      //padding-top: 3%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .testimonial3-background {
+      min-height: 120px;
+    }
+
+    .testimonial-mobile {
+      display: flex;
+      padding-top: 16px;
+    }
+    .play-button {
+      &-href {
+        position: unset;
+        margin: auto;
+      }
+    }
+    .testimonial-mobile-title {
+      display: flex;
+      box-shadow: 0px 1px 0px 0 #E6E6E6;
+    }
+    .testimonial-bottom {
+      padding-left: 24px;
+    }
+    .testimonials-title {
+      padding-left: 24px;
+      padding-top: 24px;
+      box-shadow: 0 -1px 0 0 #E6E6E6;
+      h4 {
+        font-size: 18px;
+      }
+    }
+    .testimonials-subj {
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+    .testimonial-school {
+      max-height: 129px;
+    }
   }
-  .testimonial-background {
-    background-image: url(../src/image/testimponial1.jpg);
-    min-height: 120px;
-    max-width: 120px;
-    //padding-top: 3%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+
 }

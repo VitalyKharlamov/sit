@@ -79,97 +79,14 @@
   border: 1px solid #E6E6E6!important;
 }
 
-.modal-width {
-  max-width: 752px;
-  width: 100%;
-}
 
-.sportsmen_modal-header {
-  background-color: #F5F5F5;
-  height: 72px;
-  color: #0C65B1;
-  line-height: 36px;
-  font-size: 25px;
-  padding-top: 21px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.sportsmens_modal-biography {
-  color: #333333;
-  margin-top: 18px;
-  margin-right: 24px;
-  margin-left: 24px;
-  margin-bottom: 18px;
-}
 
 .sportsmens_title {
   margin-left: 24px;
   margin-top: 24px;
 }
 
-.close-popup {
-  margin-top: 2px!important;
-  background: url("../src/icon/x.svg") no-repeat center!important;
-  height: 24px;
-  width: 24px;
-  &:hover {
-  background: url("../src/icon/x_b.svg") no-repeat center!important;
-}
-}
 
-.close-video-popup {
-  background: url("../src/icon/x.svg") no-repeat center!important;
-
-  right: 8px;
-  height: 48px;
-  width: 48px!important;
-  background-color: #FFFFFF!important;
-  border: none;
-  box-shadow: -1px 4px 4px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 24px;
-  left: auto;
-  filter: none;
-  opacity: 1;
-  margin-right: -16px;
-  &:hover {
-    background: url("../src/icon/x_b.svg") no-repeat center!important;
-    background-color: #FFFFFF!important;
-    filter: none;
-    opacity: 1;
-    border: 1px solid #E6E6E6!important;
-  }
-}
-
-.play-button {
-  background: url("../src/icon/play.svg") no-repeat center;
-  height: 65px;
-  width: 65px;
-  background-color: rgba(30,30,30,0.6);
-  //box-shadow: -1px 4px 4px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 32.5px;
-  border: 1px solid #FFFFFF;
-  &-href {
-    width: 65px;
-    position: absolute;
-    margin: 30% 38%;
-    border-radius: 32.5px;
-  }
-}
-
-
-
-.modal-center {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top:0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
 
 .send-button {
   width: 100%;
@@ -240,93 +157,6 @@ header .slide-control {
   top: 0;
   width: 100%;
   z-index: 1;
-}
-
-
-
-.testimonials-title {
-  color: rgb(0,122,191);
-  margin-top: 16px;
-  line-height: 35px;
-}
-
-.testimonial-bottom {
-  height: 80px;
-  h3 {
-    padding-top: 8px;
-    margin-bottom: 22px;
-  }
-}
-
-.testimonial-school {
-  max-width: 144px;
-  margin-top: 16px;
-  margin-left: 16px;
-  float: right;
-}
-
-.testimonial-school-section {
-  box-shadow: -1px 0 0 0 rgba(0,0,0,0.12);
-  min-height: 240px;
-  padding-right: 16px;
-  margin-left: 8px;
-  padding-left: 0;
-  max-width: 176px;
-  //padding-top: 123px;
-}
-
-.testimonial-info {
-  box-shadow: -1px 0 0 0 rgba(0,0,0,0.12);
-  min-height: 240px;
-  padding-left: 32px;
-}
-
-.testimonial-picture-padding {
-  padding-left: 0;
-  height: 240px;
-}
-
-.testimonial1-background {
-  background-image: url(../src/image/testimponial1.jpg);
-  min-height: 240px;
-  min-width: 272px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.testimonial2-background {
-  background-image: url(../src/image/testimonial2.jpg);
-  min-height: 240px;
-  min-width: 272px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.testimonial3-background {
-  background-image: url(../src/image/testemonial3.jpg);
-  min-height: 240px;
-  min-width: 272px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.testimonial4-background {
-  background-image: url(../src/image/testimonial4.jpg);
-  min-height: 240px;
-  min-width: 272px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.slide-button-testimonials {
-  position: relative;
-  width: 100%;
-  bottom: 0;
-  margin-top: 6.5px;
 }
 
 
