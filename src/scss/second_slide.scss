@@ -141,7 +141,7 @@
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 
   .second_slide {
     text-align: center;
@@ -162,8 +162,8 @@
   margin-right: 8px;
 }
   .oidcen {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 24px;
+    padding-right:24px;
     h2 {
       font-size: 30px;
     }
@@ -197,5 +197,8 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+  }
+  .button--primary {
+    width: 100%;
   }
 }
