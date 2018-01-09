@@ -114,3 +114,10 @@ $('.carousel[data-type="multi"] .item').each(function () {
             .appendTo($(this));
     }
 });
+
+// HIDE COLLAPSED MENU
+$('.close_menu a').click(
+    function () {
+        $('#navbar-main').removeClass('in');
+    }
+);
