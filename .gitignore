@@ -3,4 +3,7 @@
 /.idea/
 /.idea/workspace.xml
 
+
+/cgi/mail.py
+
 /dist/*
