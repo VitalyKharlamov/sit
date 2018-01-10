@@ -42,7 +42,7 @@
                             </div>
                             <div class="collapse main-menu" id="navbar-main">
                                 <div class="main-menu-overlay">
-                                    <ul class="nav navbar-nav main_nav">
+                                    <ul class="nav navbar-nav main_nav hidden-xs">
                                         <li class="main-menu-item"><a class="smooth_scroll" href="#howitworks">How it
                                             works</a></li>
                                         <li class="main-menu-item"><a class="smooth_scroll" href="#speakers">Team</a>
@@ -60,6 +60,27 @@
                                                class="collapse"
                                                data-toggle="modal">Event Enquiry</a>
                                         </li>
+                                        <li class="main-menu-item close_menu"><a>Close</a>
+                                    </ul>
+                                    <ul class="nav navbar-nav main_nav visible-xs">
+                                        <li class="main-menu-item close-sandwich"><a class="smooth_scroll" href="#howitworks">How it
+                                            works</a></li>
+                                        <li class="main-menu-item close-sandwich"><a class="smooth_scroll" href="#sportsmens-mobile">Team</a>
+                                        </li>
+                                        <li class="main-menu-item close-sandwich"><a class="smooth_scroll"
+                                                                      href="#testimonials1">Testimonials</a>
+                                        </li>
+                                        <li class="main-menu-item close-sandwich"><a class="smooth_scroll"
+                                                                      href="#software">Platform</a>
+                                        </li>
+                                        <li class="main-menu-item close-sandwich"><a class="smooth_scroll" href="#contact">Contact</a>
+                                        </li>
+                                        <li class="main-menu-item active">
+                                            <a href="#myModal"
+                                               class="collapse"
+                                               data-toggle="modal">Event Enquiry</a>
+                                        </li>
+                                        <li class="main-menu-item"><a class="smooth_scroll" href="../platform">Sports development platform</a></li>
                                         <li class="main-menu-item close_menu"><a>Close</a>
                                     </ul>
                                 </div>
@@ -91,7 +112,7 @@
                                     <div class="col-md-6 col-md-offset-6 oid">
                                         <div class="oidcen">
                                             <h2> Sports Stars Inspiration Day</h2>
-                                            <h5 class="hidden-xs">Helping develop PE and Sport through <br>Inspiration,
+                                            <h5>Helping develop PE and Sport through <br>Inspiration,
                                                 Aspiration and Engagement.</h5>
                                             <a href="#myModal" data-toggle="modal">
                                                 <button class="button--primary">Event Enquiry</button>
@@ -327,7 +348,7 @@
                                             <div class="sportsmens_title">
                                                 <h6 class="sportsmen_subheader"><span
                                                         class="fontbold">Toby Garbett</span>
-                                                    <br>Double Olympic and Double World</br></h6>
+                                                    <br>Double Olympian and Double World Champion</br></h6>
                                             </div>
                                             <div class="sportsmens_biography">Upon retirement from
                                                 rowing Toby
@@ -486,7 +507,7 @@
 
 
 <!--Sportsmensmobile-->
-<section class="sportsmens_section visible-xs">
+<section id="sportsmens-mobile" class="sportsmens_section visible-xs">
 
     <div class="sportsmens-margin">
 
@@ -693,12 +714,14 @@
                                                 <h6 class="sportsmen_subheader"><span class="fontbold">Mel Clarke</span>
                                                     <br>Double Para-Olympian medallist</br></h6>
                                             </div>
+                                            <div class="sportsmens_biography">
                                             She has also won Gold and Silver
                                             medals at the World Championships. Due to an arthritic condition
                                             Mel has had to use a wheelchair since the age of 11 and lost
                                             sight
                                             in her aiming eye and had to remodel her approach physically and
                                             mentally…<span><a href="#melclarkemodal" data-toggle="modal"> Read more</a></span>
+                                            </div>
                                         </div>
 
 
@@ -726,9 +749,11 @@
                                                         class="fontbold">Toby Garbett</span>
                                                     <br>Double Olympic and Double World</br></h6>
                                             </div>
+                                            <div class="sportsmens_biography">
                                             Upon retirement from rowing Toby
                                             refocused his goals and gained GB Vests in Triathlon going on to
                                             become the National AG Champion.
+                                            </div>
                                         </div>
 
 
@@ -824,7 +849,9 @@
                                         </a></div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="testimonial2-background"></div>
+                                    <a class="img-wrapper show_img_popup" content="../src/image/b1.jpg">
+                                        <div class="testimonial2-background"></div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -849,10 +876,14 @@
                                 </div>
                             </div>
                             <div class="col-md-3 testimonial-picture-padding">
+                                <a class="img-wrapper show_img_popup" content="../src/image/WH1.jpg">
                                 <div class="testimonial3-background"></div>
+                                </a>
                             </div>
                             <div class="col-md-3">
+                                <a class="img-wrapper show_img_popup" content="../src/image/WH2.JPG">
                                 <div class="testimonial4-background"></div>
+                                </a>
                             </div>
 
                         </div>
@@ -866,7 +897,7 @@
 
     </div>
 </section>
-<!---->
+<!---testimonials-mobile--->
 <section id="testimonials1" class="testimonial_section visible-xs">
     <div class="container">
         <div class="row">
@@ -1296,8 +1327,8 @@
 
 <!-- HTML-код модального окна -->
 <div id="videoyoutube" class="modal fade">
-    <div class="modal-center" data-dismiss="modal">
-        <div class="modal-dialog">
+    <div class="modal-center video-padding" data-dismiss="modal">
+        <div class="modal-dialog video-width">
             <div>
                 <button type="button" class="close close-video-popup" data-dismiss="modal"
                         aria-hidden="true">
@@ -1315,6 +1346,23 @@
         </div>
     </div>
 </div>
+
+<!--modal-picture-->
+<div class="modal fade" id="modal_with_img" role="dialog">
+    <div class="modal-center">
+        <div class="modal_img-container">
+
+            <button type="button" class="close_popup-btn" data-dismiss="modal"
+                    aria-hidden="true">
+            </button>
+            <div class="modal-picture-position">
+                <img id="popupImage" class="modal_img" alt="how it works"/>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--./modal-picture-->
 
 <!--MODAL SUCCESS-->
 <!-- Modal -->

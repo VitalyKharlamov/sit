@@ -155,7 +155,7 @@
     margin-top: 0;
   }
 .oid {
-  height: 192px;
+  height: auto;
   margin-bottom: 64px;
   padding-top: 30px;
   margin-left: 24px;
@@ -164,6 +164,7 @@
   .oidcen {
     padding-left: 24px;
     padding-right:24px;
+    padding-bottom: 24px;
     h2 {
       font-size: 30px;
     }
@@ -171,7 +172,7 @@
   .slide_background {
     min-height: 1px;
     height: 100vh;
-    align-items: end;
+    align-items: flex-end;
     display: flex;
     position: relative;
   }
