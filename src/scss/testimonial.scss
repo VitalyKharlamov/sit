@@ -139,6 +139,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+      min-width: 1px;
     }
 
     .testimonial-mobile {
@@ -172,6 +173,20 @@
     }
     .testimonial-school {
       max-height: 129px;
+    }
+  }
+
+  .testimonial_section-platform {
+    .testimonials-subj {
+      margin-bottom: 24px;
+    }
+    .testimonial-mobile {
+      min-height: 165px;
+      .logo-platform {
+        img {
+          margin: 31px auto;
+        }
+      }
     }
   }
 

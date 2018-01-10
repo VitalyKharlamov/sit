@@ -121,3 +121,10 @@ $('.close_menu a').click(
         $('#navbar-main').removeClass('in');
     }
 );
+
+$('.close-sandwich a').on('click', function () {
+	$('#navbar-main').removeClass('in');
+	$a = $($(this).attr('href'));
+	// $('html,body').animate({ scrollTop: $a.offset().top - 50}, 500);
+	return false;
+});

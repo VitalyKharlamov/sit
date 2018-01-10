@@ -41,3 +41,16 @@
     color: #ffffff;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .reilly_section_dark {
+    .reilly_image-container {
+      margin-top: 24px;
+      align-items: unset!important;
+      height: auto;
+    }
+    .reilly_about {
+      padding: 24px 24px 0 24px;
+    }
+  }
+}

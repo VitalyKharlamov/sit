@@ -85,7 +85,7 @@
   border-radius: 24px;
   left: auto;
   filter: none;
-  opacity: 1;
+  opacity: 1!important;
   margin-right: -16px;
   &:hover {
     background: url("../src/icon/x_b.svg") no-repeat center!important;
@@ -119,6 +119,16 @@
   }
 }
 
+.modal-picture-position {
+  text-align: center;
+  img {
+    max-width: 880px;
+  }
+}
+
+
+
+
 @media screen and (max-width: 768px) {
 .modal-hod {
   &-button {
@@ -146,5 +156,21 @@
   }
   .modal-title {
     font-size: 18px;
+  }
+  .video-width {
+    margin: 0!important;
+    width: 100%!important;
+    iframe {
+      width: 100%
+    }
+  }
+  .video-padding {
+    padding: 0;
+  }
+  .close-video-popup {
+    position: absolute;
+    right: 7px;
+    top: 8px;
+    margin-right: 0;
   }
 }
