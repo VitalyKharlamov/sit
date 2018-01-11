@@ -128,3 +128,25 @@ $('.close-sandwich a').on('click', function () {
 	// $('html,body').animate({ scrollTop: $a.offset().top - 50}, 500);
 	return false;
 });
+
+
+$(window).resize(function(){
+    showHowItHelpsCarousel();
+});
+
+$(document).ready(function(){
+    showHowItHelpsCarousel();
+});
+
+// Add class item to how it helps section for showing carousel on mobile instead of tabs
+// remove class item for middle size screens or bigger
+function showHowItHelpsCarousel() {
+    if(window.matchMedia('(max-width: 768px)').matches) {
+        // change functionality for smaller screens
+        $('.description_tabs-content').addClass("item");
+        $('.description_tabs-content:first-child').addClass("active");
+    } else {
+        $('.description_tabs-content').removeClass("item");
+        $('.description_tabs-content').removeClass("active");
+    }
+}
