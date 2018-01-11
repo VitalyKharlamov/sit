@@ -102,3 +102,25 @@ ul.vertical_tabs li.current{
 .how_it_works_right {
   min-height: 474px;
 }
+
+@media screen and (max-width: 768px) {
+  .how_it_works_section {
+    min-height: 1px;
+    padding: 24px;
+    h2 {
+      margin: 0;
+    }
+    .vertical_tab-content {
+      height: auto;
+      h6 {
+        margin-top: 10px;
+      }
+    }
+    .text {
+      height: auto;
+    }
+    .how_it_works_right {
+      min-height: 1px;
+    }
+  }
+}
