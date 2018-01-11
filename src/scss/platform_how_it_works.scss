@@ -109,26 +109,38 @@ ul.vertical_tabs li.current{
 
 @media screen and (max-width: 768px) {
   .how_it_works_section {
+    margin-right: -8px;
     min-height: 1px;
-    padding: 24px;
+    padding: 24px 0 24px 24px;
     h2 {
-      margin: 0;
+      margin: 0 0 35px 0;
     }
     .vertical_tab-content {
+      box-shadow: 0 -1px 0 0 #003A6F;
+      padding-top: 22px;
+      font-size: 16px;
+      min-height: 64px;
       height: auto;
+      &-bottom {
+        box-shadow: 0 -1px 0 0 #003A6F, 0 1px 0 0 #003A6F;
+      }
       a {
         color: #ffffff;
         &:hover {
           text-decoration: none;
         }
+
       }
       h6 {
         margin-top: 10px;
       }
     }
     .text {
+      height: auto;
       p {
         height: auto;
+        margin-top: 24px;
+        padding-right: 24px;
       }
     }
     .how_it_works_right {
