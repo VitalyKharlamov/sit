@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Squad In Touch</title>
     <link rel="stylesheet" href="../dist/style.css" type="text/css"/>
-    <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="../src/icon/favicon.ico"/>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-main" data-offset="72">
@@ -50,26 +50,34 @@
                                     <ul class="nav navbar-nav main_nav">
 
                                         <li class="main-menu-item">
-                                            <a href="#" data-toggle="dropdown">
+                                            <a class="menu-open" href="#" data-toggle="dropdown">
                                                 <b class="caret caret_custom"></b>
                                                 How it helps
                                             </a>
 
                                             <ul id="helps_for" class="dropdown-menu main-menu-dropdown">
-                                                <li class="close-sandwich"><a href="#how_it_helps" data-tab="teachers" data-type="helps"
-                                                       class="smooth_scroll main-menu-dropdown-item">PE Teachers</a>
+                                                <li class="close-sandwich"><a href="#how_it_helps" data-tab="teachers"
+                                                                              data-type="helps"
+                                                                              class="smooth_scroll main-menu-dropdown-item">PE
+                                                    Teachers</a>
                                                 </li>
-                                                <li class="close-sandwich"><a href="#how_it_helps" data-tab="schools" data-type="helps"
-                                                       class="smooth_scroll main-menu-dropdown-item">Schools</a></li>
-                                                <li class="close-sandwich"><a href="#how_it_helps" data-tab="parents" data-type="helps"
-                                                       class="smooth_scroll main-menu-dropdown-item">Parents</a></li>
-                                                <li class="close-sandwich"><a href="#how_it_helps" data-tab="students" data-type="helps"
-                                                       class="smooth_scroll main-menu-dropdown-item">Students</a></li>
+                                                <li class="close-sandwich"><a href="#how_it_helps" data-tab="schools"
+                                                                              data-type="helps"
+                                                                              class="smooth_scroll main-menu-dropdown-item">Schools</a>
+                                                </li>
+                                                <li class="close-sandwich"><a href="#how_it_helps" data-tab="parents"
+                                                                              data-type="helps"
+                                                                              class="smooth_scroll main-menu-dropdown-item">Parents</a>
+                                                </li>
+                                                <li class="close-sandwich"><a href="#how_it_helps" data-tab="students"
+                                                                              data-type="helps"
+                                                                              class="smooth_scroll main-menu-dropdown-item">Students</a>
+                                                </li>
                                             </ul>
                                         </li>
 
                                         <li class="main-menu-item">
-                                            <a href="#" data-toggle="dropdown">
+                                            <a class="menu-open" href="#" data-toggle="dropdown">
                                                 <b class="caret caret_custom"></b>
                                                 How it works
                                             </a>
@@ -108,15 +116,18 @@
                                             </ul>
                                         </li>
 
-                                        <li class="main-menu-item close-sandwich"><a class="smooth_scroll" href="#testimonials">Testimonials</a>
+                                        <li class="main-menu-item close-sandwich"><a class="smooth_scroll"
+                                                                                     href="#testimonials">Testimonials</a>
                                         </li>
-                                        <li class="main-menu-item close-sandwich"><a class="smooth_scroll" href="#contact">Contact</a>
+                                        <li class="main-menu-item close-sandwich"><a class="smooth_scroll"
+                                                                                     href="#contact">Contact</a>
                                         </li>
                                         <li class="main-menu-item active"><a href="https://app.squadintouch.com"
                                                                              target="_blank">Sign up /
                                             Sign in</a>
                                         </li>
-                                        <li class="main-menu-item visible-xs"><a class="smooth_scroll" href="../sport">Sports Stars Inspiration Day</a></li>
+                                        <li class="main-menu-item visible-xs"><a class="smooth_scroll" href="../sport">Sports
+                                            Stars Inspiration Day</a></li>
                                         <li class="main-menu-item close_menu"><a>Close</a>
                                         </li>
                                     </ul>
@@ -299,14 +310,14 @@
 <section id="how_it_helps" class="description_section">
 
     <div class="container">
-        <div class="row">
+        <div class="row description_column-reverse">
 
             <!--TABS-->
             <div class="col-md-7 description_tabs-container">
 
-                <h2>How it helps</h2>
+                <h2 class="hidden-xs">How it helps</h2>
 
-                <ul class="tabs description_tabs">
+                <ul class="tabs description_tabs hidden-xs">
                     <li class="tab-link current" id="teachers_tab" data-tab="teachers" content="teachers_image">PE
                         Teachers
                     </li>
@@ -315,83 +326,89 @@
                     <li class="tab-link" id="students_tab" data-tab="students" content="students_image">Students</li>
                 </ul>
 
-                <div id="teachers" class="tab-content description_tabs-content current">
-                    <strong>
-                        Spend your time doing sport. <br>
-                        Allow Squad In Touch to take care of the rest. <br>
-                    </strong>
-                    <br>
-                    Squad In Touch helps PE teachers: <br>
-                    • Organise their fixtures calendar <br>
-                    • Keep records of pupils performance and discipline up to date <br>
-                    • Communicate with parents and pupils <br>
-                    • Improve PE practice; getting in touch with other PE teachers and our team of Olympians Spend your
-                    time doing the sport. Allow Squad In Touch to take care of the rest.
+                <div id="how_it_helps_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
 
-                    <a href="https://app.squadintouch.com/#register" target="_blank">
-                        <button class="button--primary description_button">Sign up for free</button>
-                    </a>
+                        <div id="teachers" class="tab-content description_tabs-content current">
+                            <strong>
+                                Spend your time doing sport. <br>
+                                Allow Squad In Touch to take care of the rest. <br>
+                            </strong>
+                            <br>
+                            Squad In Touch helps PE teachers: <br>
+                            • Organise their fixtures calendar <br>
+                            • Keep records of pupils performance and discipline up to date <br>
+                            • Communicate with parents and pupils <br>
+                            • Improve PE practice; getting in touch with other PE teachers and our team of Olympians
+                            Spend your
+                            time doing the sport. Allow Squad In Touch to take care of the rest.
+
+                            <a href="https://app.squadintouch.com/#register" target="_blank">
+                                <button class="button--primary description_button">Sign up for free</button>
+                            </a>
+                        </div>
+
+                        <div id="schools" class="tab-content description_tabs-content">
+                            <strong>
+                                A sustainable sports software solution created to help you <br>
+                                develop and manage your PE strategy and inspire the next generation <br>
+                            </strong>
+                            <br>
+                            Squad In Touch helps schools: <br>
+                            • Save money and staff time <br>
+                            • Increase the number of young people taking part in competitions <br>
+                            • Promote healthy lifestyle among your pupils <br>
+                            • Broaden participation opportunities <br>
+                            • Increase community engagement <br>
+                            • Develop positive school/parent relationships <br>
+                            • Provide engaging and successful environment for pupils, parents and staff
+
+                            <a href="https://app.squadintouch.com/#register" target="_blank">
+                                <button class="button--primary description_button">TRY 30 DAYS for FREE</button>
+                            </a>
+                        </div>
+
+                        <div id="parents" class="tab-content description_tabs-content">
+                            <strong>
+                                Don’t JUST read results, <br>
+                                IMPROVE results with our Olympians advice.<br>
+                            </strong>
+                            <br>
+                            With Squad In Touch parents are provided with: <br>
+                            • 24 Hour access to the fixtures calendar, tables and reports <br>
+                            • One touch booking for after school clubs <br>
+                            • Free app to help support their child and share photos of events <br>
+                            • Child’s performance and progress tracking <br>
+                            • Tools for communicating with school PE staff and other parents
+
+                            <a href="https://app.squadintouch.com/#register" target="_blank">
+                                <button class="button--primary description_button">Sign up for free</button>
+                            </a>
+                        </div>
+
+                        <div id="students" class="tab-content description_tabs-content">
+                            <strong>
+                                Get socialised around your sport life. <br>
+                                Keep in touch with your squad.<br>
+                            </strong>
+                            <br>
+                            With Squad In Touch, students are provided with: <br>
+                            • 24 Hour access to the fixtures calendar, tables and reports <br>
+                            • Track your performance and progress <br>
+                            • Tools for communicating with school PE staff and other students <br>
+                            • Free app to share photos of events <br>
+
+                            <a href="https://app.squadintouch.com/#register" target="_blank">
+                                <button class="button--primary description_button">Sign up for free</button>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!--./TABS-->
                 </div>
-
-                <div id="schools" class="tab-content description_tabs-content">
-                    <strong>
-                        A sustainable sports software solution created to help you <br>
-                        develop and manage your PE strategy and inspire the next generation <br>
-                    </strong>
-                    <br>
-                    Squad In Touch helps schools: <br>
-                    • Save money and staff time <br>
-                    • Increase the number of young people taking part in competitions <br>
-                    • Promote healthy lifestyle among your pupils <br>
-                    • Broaden participation opportunities <br>
-                    • Increase community engagement <br>
-                    • Develop positive school/parent relationships <br>
-                    • Provide engaging and successful environment for pupils, parents and staff
-
-                    <a href="https://app.squadintouch.com/#register" target="_blank">
-                        <button class="button--primary description_button">TRY 30 DAYS for FREE</button>
-                    </a>
-                </div>
-
-                <div id="parents" class="tab-content description_tabs-content">
-                    <strong>
-                        Don’t JUST read results, <br>
-                        IMPROVE results with our Olympians advice.<br>
-                    </strong>
-                    <br>
-                    With Squad In Touch parents are provided with: <br>
-                    • 24 Hour access to the fixtures calendar, tables and reports <br>
-                    • One touch booking for after school clubs <br>
-                    • Free app to help support their child and share photos of events <br>
-                    • Child’s performance and progress tracking <br>
-                    • Tools for communicating with school PE staff and other parents
-
-                    <a href="https://app.squadintouch.com/#register" target="_blank">
-                        <button class="button--primary description_button">Sign up for free</button>
-                    </a>
-                </div>
-
-                <div id="students" class="tab-content description_tabs-content">
-                    <strong>
-                        Get socialised around your sport life. <br>
-                        Keep in touch with your squad.<br>
-                    </strong>
-                    <br>
-                    With Squad In Touch, students are provided with: <br>
-                    • 24 Hour access to the fixtures calendar, tables and reports <br>
-                    • Track your performance and progress <br>
-                    • Tools for communicating with school PE staff and other students <br>
-                    • Free app to share photos of events <br>
-
-                    <a href="https://app.squadintouch.com/#register" target="_blank">
-                        <button class="button--primary description_button">Sign up for free</button>
-                    </a>
-                </div>
-
             </div>
-            <!--./TABS-->
 
-            <div class="col-sm-5 col-md-5 description_image hidden-xs">
+            <div class="col-sm-5 col-md-5 description_image">
                 <!--TAB IMAGES-->
                 <img id="teachers_image" class="tab-image current" src="../src/image/teacher.png"/>
                 <img id="schools_image" class="tab-image" src="../src/image/HH_Schools.png"/>
@@ -573,9 +590,10 @@
                     <h4 class="testimonial_title">
                         Melbourne Junior School
                     </h4>
-                    <p>"We are delighted with Squad In Touch at Melbourne Junior School.  They could not have been more
+                    <p>"We are delighted with Squad In Touch at Melbourne Junior School. They could not have been more
                         helpful in explaining how it works and accommodating our specific school's requirements in the
-                        set-up process. <span><a href="#melbourne-school" data-toggle="modal"> Read more..</a></span>" <br>
+                        set-up process. <span><a href="#melbourne-school" data-toggle="modal"> Read more..</a></span>"
+                        <br>
                         <br>
                         — Jim Jenkinson, PE & School Sport Coordinator, Melbourne Junior School
                     </p>
@@ -615,7 +633,8 @@
                         </div>
                         <div class="testimonials-title">
                             <h4>Independent Schools Association</h4></div>
-                        <div class="testimonials-subj">"Squad in Touch are a pleasure to work with. They are always willing to try and adapt their
+                        <div class="testimonials-subj">"Squad in Touch are a pleasure to work with. They are always
+                            willing to try and adapt their
                             system to meet the users needs and make it as user friendly as possible.
                             The team are quick and responsive and very knowledgeable in their field.
                             Their results base is very aesthetically pleasing and makes searching for results quick and
@@ -635,9 +654,12 @@
                         </div>
                         <div class="testimonials-title">
                             <h4>Melbourne Junior School</h4></div>
-                        <div class="testimonials-subj">"We are delighted with Squad In Touch at Melbourne Junior School.  They could not have been more
-                            helpful in explaining how it works and accommodating our specific school's requirements in the
-                            set-up process. <span><a href="#melbourne-school" data-toggle="modal"> Read more..</a></span>" <br>
+                        <div class="testimonials-subj">"We are delighted with Squad In Touch at Melbourne Junior School.
+                            They could not have been more
+                            helpful in explaining how it works and accommodating our specific school's requirements in
+                            the
+                            set-up process. <span><a href="#melbourne-school"
+                                                     data-toggle="modal"> Read more..</a></span>" <br>
                             <br>
                             — Jim Jenkinson, PE & School Sport Coordinator, Melbourne Junior School
                         </div>
@@ -690,7 +712,8 @@
                         “I am a Double Olympian and PE teacher but to my 3 children I am Dad.
                         Through conversations I have had with elite sportsmen there is an agreement.
                         The most important thing you can do as a parent to help your child succeed is to simply
-                        show support and encouragement <span><a href="#brandan" data-toggle="modal"> Read more</a></span>
+                        show support and encouragement <span><a href="#brandan"
+                                                                data-toggle="modal"> Read more</a></span>
                         <br>
                         <br>
                         <strong>Brendan Reilly</strong> <br>
@@ -1056,12 +1079,13 @@
                 <!-- Основное содержимое модального окна -->
                 <div class="testimonials-title sportsmens_title">
                     <h4>Melbourne Junior School</h4></div>
-                <div class="sportsmens_modal-biography">"We are delighted with Squad In Touch at Melbourne Junior School.
+                <div class="sportsmens_modal-biography">"We are delighted with Squad In Touch at Melbourne Junior
+                    School.
                     They could not have been more helpful in explaining how it works and accommodating our specific
-                    school's requirements in the set-up process.  We are still in the early days of using the web-based
+                    school's requirements in the set-up process. We are still in the early days of using the web-based
                     system, but it is clear how it will be a great help to the administration of our school sports
-                    fixtures and children's availability.  Parents have found downloading the APP straightforward and
-                    welcome having on-line access to the sporting calendar.  We feel sure Squad In Touch will enable us
+                    fixtures and children's availability. Parents have found downloading the APP straightforward and
+                    welcome having on-line access to the sporting calendar. We feel sure Squad In Touch will enable us
                     to manage our school sport more efficiently and are confident that it will securely hold our data so
                     we can use it to demonstrate the impact sport is making on our students."
                     <br/>
