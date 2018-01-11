@@ -31,15 +31,22 @@ $(document).ready(function() {
 });
 
 function manageTabs(tab_id) {
-    $('ul.tabs li').removeClass('current');
-    $('.tab-content').removeClass('current');
-    $('.tab-image').removeClass('current');
+    var state = "active";
+	if(window.matchMedia('(max-width: 768px)').matches) {
+		// change functionality for smaller screens
+		state = "active";
+	} else {
+		state = "current";
+	}
+    $('ul.tabs li').removeClass(state);
+    $('.tab-content').removeClass(state);
+    $('.tab-image').removeClass(state);
     $('#navbar-main li').removeClass('active');
 
-    $(this).addClass('current');
-    $("#"+tab_id).addClass('current');
-    $("#"+tab_id + "_image").addClass('current');
-    $("#"+tab_id + "_tab").addClass('current');
+    $(this).addClass(state);
+    $("#"+tab_id).addClass(state);
+    $("#"+tab_id + "_image").addClass(state);
+    $("#"+tab_id + "_tab").addClass(state);
     $("#"+tab_id + "_nav").addClass('active');
 }
 

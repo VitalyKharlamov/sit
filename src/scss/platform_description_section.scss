@@ -143,12 +143,31 @@ ul.tabs li.current {
   }
 }
 @media screen and (max-width: 767px) {
+  .description_tabs-container {
+    padding-top: 0;
+  }
   .description_section {
+    .slide-control {
+      z-index: 1;
+      margin-top: 195px;
+    }
     .description_tabs-content{
+      padding-top: 0;
       padding-right: 16px;
       padding-bottom: 24px;
       font-size: 14px;
       line-height: 21px;
+      h3 {
+        font-weight: bold;
+        color: #007ABF;
+        line-height: 37px;
+      }
+      img {
+        max-height: 176px;
+        width: auto;
+        margin: auto;
+        margin-top: 15px;
+      }
     }
     .description_button {
     position: unset;
