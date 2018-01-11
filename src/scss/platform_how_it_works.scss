@@ -67,7 +67,6 @@ ul.vertical_tabs li.current{
   color: #ffffff;
   display: none;
   height: 480px;
-  overflow: hidden;
 
   .text {
     height: 250px;
@@ -84,6 +83,7 @@ ul.vertical_tabs li.current{
     p {
       color: rgba(255,255,255,0.7);
       font-size: 16px;
+      height: 210px;
     }
 
   }
@@ -118,9 +118,15 @@ ul.vertical_tabs li.current{
     }
     .text {
       height: auto;
+      p {
+        height: 180px;
+      }
     }
     .how_it_works_right {
       min-height: 1px;
+      p {
+        height: 180px;
+      }
     }
   }
 }

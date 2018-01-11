@@ -142,6 +142,7 @@ $(".dropdown-menu a").click(function() {
 
 $(document).ready(function(){
     showHowItHelpsCarousel();
+    showAccordion();
 });
 
 // Add class item to how it helps section for showing carousel on mobile instead of tabs
@@ -155,4 +156,14 @@ function showHowItHelpsCarousel() {
         $('.description_tabs-content').removeClass("item");
         $('.description_tabs-content').removeClass("active");
     }
+}
+
+function showAccordion() {
+	if(window.matchMedia('(max-width: 768px)').matches) {
+		// change functionality for smaller screens
+		$('.text').addClass("panel-collapse collapse");
+		$('.vertical_tab-content').addClass("current");
+	} else {
+		$('.text').removeClass("panel-collapse collapse");
+	}
 }
