@@ -136,17 +136,8 @@ $('.close-sandwich a').on('click', function () {
 	return false;
 });
 
-$('.menu-open').click(function () {
-	$('.dropdown-menu').hide();
-	$(this).next().show();
-	return false;
-});
-$('.dropdown-menu a').click(function () {
-	$('.dropdown-menu').hide();
-});
-
-$(window).resize(function(){
-    showHowItHelpsCarousel();
+$(".dropdown-menu a").click(function() {
+	$(this).closest(".dropdown-menu").prev().dropdown("toggle");
 });
 
 $(document).ready(function(){
