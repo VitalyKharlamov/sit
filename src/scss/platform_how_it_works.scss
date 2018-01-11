@@ -91,6 +91,10 @@ ul.vertical_tabs li.current{
   img {
     width: 100%;
     height: auto;
+
+    &.full-width {
+      width: auto;
+    }
   }
 
 }
