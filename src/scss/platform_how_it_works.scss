@@ -112,21 +112,23 @@ ul.vertical_tabs li.current{
     }
     .vertical_tab-content {
       height: auto;
+      a {
+        color: #ffffff;
+        &:hover {
+          text-decoration: none;
+        }
+      }
       h6 {
         margin-top: 10px;
       }
     }
     .text {
-      height: auto;
       p {
-        height: 180px;
+        height: auto;
       }
     }
     .how_it_works_right {
       min-height: 1px;
-      p {
-        height: 180px;
-      }
     }
   }
 }
