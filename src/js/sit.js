@@ -128,3 +128,12 @@ $('.close-sandwich a').on('click', function () {
 	// $('html,body').animate({ scrollTop: $a.offset().top - 50}, 500);
 	return false;
 });
+
+$('.menu-open').click(function () {
+	$('.dropdown-menu').hide();
+	$(this).next().show();
+	return false;
+});
+$('.dropdown-menu a').click(function () {
+	$('.dropdown-menu').hide();
+});
