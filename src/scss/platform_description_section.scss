@@ -142,7 +142,7 @@ ul.tabs li.current {
     display: inherit;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .description_tabs-container {
     padding-top: 0;
   }
@@ -184,6 +184,44 @@ ul.tabs li.current {
         max-height: 176px;
         width: auto;
         margin: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .description_tabs {
+li {
+  &:nth-child(1) {
+    width: 160px;
+  }
+  &:nth-child(2) {
+    width: 107px;
+  }
+  &:nth-child(3) {
+    width: 107px;
+  }
+  &:nth-child(4) {
+    width: 124px;
+  }
+}
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .description_tabs {
+    li {
+      font-size: 20px;
+      &:nth-child(1) {
+        width: 130px;
+      }
+      &:nth-child(2) {
+        width: 77px;
+      }
+      &:nth-child(3) {
+        width: 77px;
+      }
+      &:nth-child(4) {
+        width: 94px;
       }
     }
   }

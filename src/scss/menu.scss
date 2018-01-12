@@ -184,7 +184,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
 
   .logo {
     margin-left: 8px;
@@ -242,6 +242,7 @@
       }
 
       &-item {
+        float: none;
 
         a {
           border-bottom: 1px solid rgba(0, 0, 0, 0.12);
@@ -253,5 +254,14 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main-menu-item {
+
+      a {
+        padding: 27px 8px!important;
+      }
   }
 }

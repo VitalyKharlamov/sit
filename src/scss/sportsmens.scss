@@ -167,3 +167,14 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .sportsmens_section {
+    .sportsmens_title {
+      margin-top: 16px;
+    }
+    .sportsmens_biography {
+      margin-top: 0;
+    }
+  }
+}

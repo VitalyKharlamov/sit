@@ -159,7 +159,7 @@ function showHowItHelpsCarousel() {
 }
 
 function showAccordion() {
-	if(window.matchMedia('(max-width: 768px)').matches) {
+	if(window.matchMedia('(max-width: 991px)').matches) {
 		// change functionality for smaller screens
 		$('.text').addClass("panel-collapse collapse");
 		$('.vertical_tab-content').addClass("current");

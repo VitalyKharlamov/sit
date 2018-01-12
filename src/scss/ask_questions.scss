@@ -208,3 +208,16 @@ $contact-section-border: rgba(255, 255, 255, 0.5);
     }
   }
 }
+
+@media screen and (max-width: 991px) {
+  .contact_section {
+    &-left {
+      h3 {
+        font-size: 20px;
+      }
+    }
+    &-right {
+      padding: 43px 8px 0 8px;
+    }
+  }
+}
