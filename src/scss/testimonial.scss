@@ -192,26 +192,81 @@
 
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) and (min-width: 992px) {
   .testimonial_section {
+    min-width: 176px;
+    .testimonial-school-section {
+      min-width: 176px;
+    }
     .testimonial1-background {
-      min-height: 200px;
+      min-height: 150px;
+      min-width: 208px;
     }
 
     .testimonial2-background {
-      min-height: 200px;
+      min-height: 150px;
+      min-width: 208px;
     }
 
     .testimonial3-background {
-      min-height: 200px;
+      min-height: 150px;
+      min-width: 208px;
     }
 
     .testimonial4-background {
-      min-height: 200px;
+      min-height: 150px;
+      min-width: 208px;
     }
     .testimonial-picture-padding {
-      height: 216px;
-      min-width: 272px;
+      height: 166px;
+      padding-left: 8px;
+      margin-right: 16px;
+      max-width: 208px;
+      margin-left: 5px;
+      &-right {
+        max-width: 208px;
+      }
+    }
+    .play-button-href {
+      margin: 20% 36%;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .testimonial_section {
+    .play-button-href {
+      margin: 32% 63%;
+    }
+    .testimonial-school-section {
+      min-width: 176px;
+      min-height: 316px;
+    }
+    .testimonial-info {
+      min-width: 317px;
+      min-height: 316px;
+    }
+    .testimonial1-background {
+      min-height: 150px;
+      min-width: 218px;
+    }
+
+    .testimonial2-background {
+      min-height: 150px;
+      min-width: 218px;
+    }
+
+    .testimonial3-background {
+      min-height: 150px;
+      min-width: 218px;
+    }
+
+    .testimonial4-background {
+      min-height: 150px;
+      min-width: 218px;
+    }
+    .testimonial-picture-padding {
+      height: 166px;
       padding-left: 8px;
     }
   }
