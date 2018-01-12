@@ -1,6 +1,6 @@
 var dropCookie = true;                      // false disables the Cookie, allowing you to style the banner
 var cookieDuration = 1;                    // Number of days before the cookie expires, and the banner reappears
-var cookieName = 'squadintouch.co.uk/';        // Name of our cookie
+var cookieName = 'squadintouch';        // Name of our cookie
 var cookieValue = 'on';                     // Value of cookie
 
 function createDiv() {

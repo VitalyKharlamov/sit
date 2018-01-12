@@ -160,3 +160,19 @@ header .slide-control {
 }
 
 
+//---------------
+// COOKIE
+//---------------
+
+#cookie-banner {
+  background: #fff;
+  border: solid 2px #007dbe;
+  border-radius: 9px;
+  bottom: 10px;
+  left: 10px;
+  margin-right: 20px;
+  max-width: 400px;
+  padding: 15px;
+  position: fixed;
+  z-index: 999;
+}
