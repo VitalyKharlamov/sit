@@ -191,3 +191,28 @@
   }
 
 }
+
+@media screen and (max-width: 1200px) {
+  .testimonial_section {
+    .testimonial1-background {
+      min-height: 200px;
+    }
+
+    .testimonial2-background {
+      min-height: 200px;
+    }
+
+    .testimonial3-background {
+      min-height: 200px;
+    }
+
+    .testimonial4-background {
+      min-height: 200px;
+    }
+    .testimonial-picture-padding {
+      height: 216px;
+      min-width: 272px;
+      padding-left: 8px;
+    }
+  }
+}
