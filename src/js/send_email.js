@@ -7,7 +7,7 @@ function sendmail() {
     var e_mail = document.getElementById("e-mail").value;
     var message = document.getElementById("messages").value;
     //var result = "http://127.0.0.1/cgi/mail.py?email=test@test.com&message=Message%20is%20are%20good!&send_to=heavyvetal88@mail.ru";
-    var result = "http://dev.squadintouch.com/cgi-bin/mail.py?";
+    var result = "http://squadintouch.com/cgi-bin/mail.py?";
     result += KEY_EMAIL + e_mail + KEY_MESSAGE + message;
     sendMessage(result);
 }
@@ -20,7 +20,7 @@ function eventEnquiry() {
     var message = document.getElementById("school_name").value;
     var notes = document.getElementById("notes").value;
     //var result = "http://127.0.0.1/cgi/mail.py?email=test@test.com&message=Message%20is%20are%20good!&send_to=heavyvetal88@mail.ru";
-    var result = "http://dev.squadintouch.com/cgi-bin/mail.py?";
+    var result = "http://squadintouch.com/cgi-bin/mail.py?";
     result += KEY_EMAIL + e_mail + KEY_MESSAGE + message + KEY_NOTES + notes;
     sendMessage(result);
 }
