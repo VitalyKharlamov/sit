@@ -6,21 +6,21 @@
     <title>Squad In Touch</title>
     <link rel="stylesheet" href="../dist/style.css" type="text/css"/>
     <link rel="shortcut icon" type="image/ico" href="../src/icon/favicon.ico"/>
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-77360065-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+    <!--<script>-->
+        <!--(function (i, s, o, g, r, a, m) {-->
+            <!--i['GoogleAnalyticsObject'] = r;-->
+            <!--i[r] = i[r] || function () {-->
+                <!--(i[r].q = i[r].q || []).push(arguments)-->
+            <!--}, i[r].l = 1 * new Date();-->
+            <!--a = s.createElement(o),-->
+                <!--m = s.getElementsByTagName(o)[0];-->
+            <!--a.async = 1;-->
+            <!--a.src = g;-->
+            <!--m.parentNode.insertBefore(a, m)-->
+        <!--})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');-->
+        <!--ga('create', 'UA-77360065-1', 'auto');-->
+        <!--ga('send', 'pageview');-->
+    <!--</script>-->
 
 </head>
 
@@ -331,16 +331,16 @@
 
 <!--Sportsmens-->
 <section class="sportsmens_section hidden-xs">
-    <div class="slide-button-sportsmens">
-        <div class="container slide-button-container">
-            <div class="slide-control-height">
-                <a class="carousel-control slide-control sportsmens-slide" href="#carousel-sportsmens"
-                   data-slide="next">
-                    <span class="glyphicon slide-content"></span>
-                </a>
-            </div>
-        </div>
-    </div>
+    <!--<div class="slide-button-sportsmens">-->
+        <!--<div class="container slide-button-container">-->
+            <!--<div class="slide-control-height">-->
+                <!--<a class="carousel-control slide-control sportsmens-slide" href="#carousel-sportsmens"-->
+                   <!--data-slide="next">-->
+                    <!--<span class="glyphicon slide-content"></span>-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
 
     <div class="sportsmens-margin">
 
@@ -348,14 +348,13 @@
             <div class="row">
                 <div>
                     <!-- Карусель -->
-                    <div id="carousel-sportsmens" class="carousel slide" data-interval="0" data-ride="carousel"
-                         data-type="multi">
+                    <div id="carousel-sportsmens" class="carousel slide multi-item-carousel" data-interval="0" data-ride="carousel">
                         <!-- Слайды карусели -->
                         <div class="carousel-inner">
                             <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
 
-                            <div class="item active">
-                                <div class="col-md-6">
+                            <div class="item active sportsmens-carousel">
+                                <div class="col-md-6 sportsmens-width">
                                     <div class="spotsmens_info">
                                         <div class="spotsmens_photo">
                                             <img class="photo_size" src="../src/image/toby.jpg"
@@ -402,8 +401,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="col-md-6">
+                            <div class="item sportsmens-carousel">
+                                <div class="col-md-6 sportsmens-width">
                                     <div class="spotsmens_info">
                                         <div class="spotsmens_photo">
                                             <img class="photo_size" src="../src/image/jo.jpg" alt="reily"/>
@@ -457,8 +456,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="col-md-6">
+                            <div class="item sportsmens-carousel">
+                                <div class="col-md-6 sportsmens-width">
                                     <div class="spotsmens_info">
                                         <div class="spotsmens_photo">
                                             <img class="photo_size" src="../src/image/martyn.jpg"
@@ -512,7 +511,11 @@
                             </div>
 
                         </div>
-
+                        <!--<a class="right carousel-control slide-control sportsmens-slide" href="#carousel-sportsmens"-->
+                           <!--data-slide="next">-->
+                            <!--<span class="glyphicon slide-content"></span>-->
+                        <!--</a>-->
+                        <a class="right carousel-control" href="#carousel-sportsmens" data-slide="next"><div class="sportsmens-right-background"></div> </a>
                     </div>
                 </div>
 
@@ -820,24 +823,15 @@
             <div class="col-md-12 col-sm-12 testimonial-bottom">
                 <h3>Testimonials</h3>
             </div>
-            <div class="slide-button-testimonials">
-                <div class="container slide-button-container">
-                    <div class="slide-control-height">
-                        <a class="carousel-control slide-control sportsmens-slide" href="#carousel-testimonials"
-                           data-slide="next">
-                            <span class="glyphicon slide-content"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+
             <!-- Карусель -->
-            <div id="carousel-testimonials" class="carousel slide" data-interval="0" data-ride="carousel">
+            <div id="carousel-testimonials" class="carousel slide" data-interval="0" data-ride="carousel" data-type="multi">
                 <!-- Слайды карусели -->
                 <div class="carousel-inner">
                     <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
                     <div class="active item">
                         <div class="container">
-                            <div class="row">
+                            <div class="row school3-margin">
                                 <div class="col-md-2 col-sm-2 testimonial-school-section">
                                     <img class="testimonial-school" src="../src/image/WE_blazon.png"
                                          alt="William Edwards"/>
@@ -872,10 +866,11 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
+
+                        <div class="item">
                     <div class="container">
-                        <div class="row school2-margin">
+                        <div class="row school3-margin">
                             <div class="col-md-2 col-sm-2 testimonial-school-section">
                                 <img class="testimonial-school" src="../src/image/WH_blazon.png" alt="WH"/>
                             </div>
@@ -905,8 +900,57 @@
 
                         </div>
                     </div>
+                    </div>
+
+
+                    <!--<div class="item">-->
+                        <!--<div class="container">-->
+                            <!--<div class="row school3-margin">-->
+                                <!--<div class="col-md-2 col-sm-2 testimonial-school-section">-->
+                                    <!--<img class="testimonial-school" src="../src/image/sirjohn.jpg"-->
+                                         <!--alt="William Edwards"/>-->
+                                <!--</div>-->
+                                <!--<div class="col-md-4 col-sm-5 testimonial-info">-->
+                                    <!--<div class="testimonials-title">-->
+                                        <!--<h4>Sir John Barrow Primary School</h4></div>-->
+                                    <!--<div>He was very flexible with how we could make it more challenging for KS2 and his-->
+                                        <!--sessions linked perfectly to the PE curriculum and Multi-Skills.-->
+
+                                        <!--<br/>-->
+                                        <!--<br>— James Maher, Teacher-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="col-md-3 col-sm-2 testimonial-picture-padding">-->
+                                    <!--<div class="testimonial1-background">-->
+                                        <!--<a class="play-button-href" href="#videoyoutube" data-toggle="modal">-->
+                                            <!--<button type="button" class="play-button"-->
+                                                    <!--aria-hidden="true">-->
+                                            <!--</button>-->
+
+                                        <!--</a></div>-->
+                                <!--</div>-->
+                                <!--<div class="col-md-3 col-sm-2 testimonial-picture-padding-right">-->
+                                    <!--<a class="img-wrapper show_img_popup" content="../src/image/b1.jpg">-->
+                                        <!--<div class="testimonial2-background"></div>-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+
                 </div>
             </div>
+            <!--<div class="slide-button-testimonials">-->
+                <!--<div class="container slide-button-container">-->
+                    <!--<div class="slide-control-height">-->
+                        <!--<a class="carousel-control slide-control sportsmens-slide" href="#carousel-testimonials"-->
+                           <!--data-slide="next">-->
+                            <!--<span class="glyphicon slide-content"></span>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
         <!--</div>-->
         <!--</div>-->
@@ -991,6 +1035,25 @@
 
 
                     </div>
+
+                    <!--<div class="item">-->
+                        <!--<div class="testimonial-mobile">-->
+                            <!--<div class="testimonial2-school-section">-->
+                                <!--<img class="testimonial-school" src="../src/image/sirjohn.jpg"-->
+                                     <!--alt="William Edwards"/>-->
+                            <!--</div>-->
+                            <!--<div class="testimonial3-background"></div>-->
+                        <!--</div>-->
+                        <!--<div class="testimonials-title">-->
+                            <!--<h4>Sir John Barrow Primary School</h4></div>-->
+                        <!--<div class="testimonials-subj">He was very flexible with how we could make it more challenging-->
+                            <!--for KS2 and his sessions linked perfectly to the PE curriculum and Multi-Skills.-->
+                            <!--<br/>-->
+                            <!--<br>— James Maher, Teacher-->
+                        <!--</div>-->
+
+
+                    <!--</div>-->
 
                 </div>
             </div>

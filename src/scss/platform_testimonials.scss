@@ -1,6 +1,74 @@
 @import "variables";
 
 .platform_testimonials_section {
+  overflow: hidden;
+  position: relative;
+  height: 700px;
+  .carousel-inner> .item.next , .carousel-inner > .item.active.right{ transform: translate3d(0, 100%, 0); -webkit-transform: translate3d(0, 100%, 0); -ms-transform: translate3d(0, 100%, 0); -moz-transform: translate3d(0, 100%, 0); -o-transform: translate3d(0, 100%, 0); top: 0;}
+  .carousel-inner > .item.prev ,.carousel-inner > .item.active.left{ transform: translate3d(0,-100%, 0); -webkit-transform: translate3d(0,-100%, 0); -moz-transform: translate3d(0,-100%, 0);-ms-transform: translate3d(0,-100%, 0); -o-transform: translate3d(0,-100%, 0); top: 0;}
+  .carousel-inner > .item.next.left , .carousel-inner > .item.prev.right , .carousel-inner > .item.active{transform:translate3d(0,0,0); -webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);; -moz-transform:translate3d(0,0,0); -o-transform:translate3d(0,0,0); top:0;}
+
+  .carousel {
+    max-height: 500px;
+  }
+
+  .slide-control {
+    right: auto;
+    top: 0px;
+    -webkit-transform: rotate(90deg);
+  }
+
+
+  .carousel-control {
+    //position: relative;
+    &.right {
+      opacity: unset;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001) 0%, rgba(255, 255, 255, 0.9) 100%);
+      bottom: 0;
+      left: 0;
+      top: auto;
+      width: 100%;
+      &:hover {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001) 0%, rgba(255, 255, 255, 0.3) 100%);
+        .testimonials-button-background {
+          background-image: url(../src/icon/right_sport_b.svg);
+        }
+      }
+    }
+  }
+
+  .testimonial-bottom-background {
+
+    height: 80px;
+    background-image: linear-gradient(to bottom, white 0%, #333333 100%);
+    opacity: 1;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+;
+
+  .testimonials-button-background {
+    -webkit-transform: rotate(90deg);
+    background-image: url(../src/icon/bottom_test_ld.svg);
+    height: 53px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 80px;
+    display: inline-block;
+    &:hover {
+      background-image: url(../src/icon/bottom_test_b.svg);
+    }
+  }
+
+  .slide-button-testimonials {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 6.5px;
+    text-align: center;
+  }
 
   .testimonial {
       padding-bottom: 12px;

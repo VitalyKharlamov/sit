@@ -6,6 +6,97 @@
   padding-bottom: 16px;
   border-top: solid 1px rgb(230,230,230);
 
+  .sportsmens-right-background {
+    background-image: url(../src/icon/right_sport_lb.svg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    &:hover {
+      background-image: url(../src/icon/right_sport_b.svg);
+    }
+  }
+
+  .sportsmens-carousel {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .sportsmens-width {
+    min-width: 525px;
+  }
+
+  .multi-item-carousel{
+    .glyphicon-chevron-right::before {
+      content: none;
+    }
+    .carousel-control {
+      opacity: unset;
+      &:hover {
+        opacity: unset;
+      }
+      width: 8%;
+      &.right {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(255, 255, 255, 1) 90%);
+        &:hover {
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(255, 255, 255, 1) 130%);
+        }
+      }
+    }
+    .carousel-inner{
+      > .sportsmens-carousel.active {
+        display: flex;
+      }
+
+      > .item{
+        transition: 500ms ease-in-out left;
+      }
+      .active{
+        &.left{
+          left:-33%;
+        }
+        &.right{
+          left:33%;
+        }
+      }
+      .next{
+        left: 33%;
+      }
+      .prev{
+        left: -33%;
+      }
+      @media all and (transform-3d), (-webkit-transform-3d) {
+        > .item{
+          // use your favourite prefixer here
+          transition: 500ms ease-in-out left;
+          transition: 500ms ease-in-out all;
+          backface-visibility: visible;
+          transform: none!important;
+        }
+      }
+    }
+    .carouse-control{
+      &.left, &.right{
+        background-image: none;
+      }
+    }
+  }
+
+  // non-related styling:
+  body{
+    background: #333;
+    color: #ddd;
+  }
+  h1{
+    color: white;
+    font-size: 2.25em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+  }
+
   .slide-button-sportsmens {
     position: relative;
     width: 100%;
@@ -111,6 +202,10 @@
       position: relative;
     }
 
+    .slide-button-sportsmens {
+      margin-top: -110px;
+    }
+
     .sportsmens-slide {
       margin-top: 15.5px;
     }
@@ -119,6 +214,9 @@
       h1 {
         font-size: 26px;
         margin-left: 16px;
+        text-shadow: unset;
+        text-align: unset;
+        color: #262626;
       }
 
     }
@@ -178,3 +276,4 @@
     }
   }
 }
+

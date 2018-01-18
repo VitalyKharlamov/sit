@@ -102,7 +102,7 @@ $(document).ready(function(){
     })
 });
 
-//Carousel script
+// Carousel script
 
 $('.carousel[data-type="multi"] .item').each(function () {
     var itemToClone = $(this);
@@ -120,6 +120,26 @@ $('.carousel[data-type="multi"] .item').each(function () {
             .addClass("cloneditem-" + (i))
             .appendTo($(this));
     }
+});
+
+$('.multi-item-carousel').carousel({
+	interval: false
+});
+
+// for every slide in carousel, copy the next slide's item in the slide.
+// Do the same for the next, next item.
+$('.multi-item-carousel .item').each(function(){
+	var next = $(this).next();
+	if (!next.length) {
+		next = $(this).siblings(':first');
+	}
+	next.children(':first-child').clone().appendTo($(this));
+
+	if (next.next().length>0) {
+		next.next().children(':first-child').clone().appendTo($(this));
+	} else {
+		$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+	}
 });
 
 // HIDE COLLAPSED MENU

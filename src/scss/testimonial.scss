@@ -1,6 +1,10 @@
 @import "variables";
 
 .testimonial_section {
+  //.carousel-inner> .item.next , .carousel-inner > .item.active.right{ transform: translate3d(0, 100%, 0); -webkit-transform: translate3d(0, 100%, 0); -ms-transform: translate3d(0, 100%, 0); -moz-transform: translate3d(0, 100%, 0); -o-transform: translate3d(0, 100%, 0); top: 0;}
+  //.carousel-inner > .item.prev ,.carousel-inner > .item.active.left{ transform: translate3d(0,-100%, 0); -webkit-transform: translate3d(0,-100%, 0); -moz-transform: translate3d(0,-100%, 0);-ms-transform: translate3d(0,-100%, 0); -o-transform: translate3d(0,-100%, 0); top: 0;}
+  //.carousel-inner > .item.next.left , .carousel-inner > .item.prev.right , .carousel-inner > .item.active{transform:translate3d(0,0,0); -webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);; -moz-transform:translate3d(0,0,0); -o-transform:translate3d(0,0,0); top:0;}
+
   .testimonials-title {
     color: rgb(0,122,191);
     margin-top: 16px;
@@ -19,6 +23,11 @@
     margin-top: 16px;
     margin-left: 16px;
     float: right;
+  }
+
+  .school3-margin {
+    margin-top: 0;
+    margin-bottom: 16px;
   }
 
   .testimonial-school-section {
@@ -82,11 +91,22 @@
     background-position: center;
   }
 
+  .slide-control {
+    right: auto;
+    top: 0px;
+    -webkit-transform: rotate(90deg);
+  }
+
+  .slide-control-height {
+    display: contents;
+  }
+
   .slide-button-testimonials {
     position: relative;
     width: 100%;
     bottom: 0;
     margin-top: 6.5px;
+    text-align: center;
   }
   .play-button {
     background: url("../src/icon/play.svg") no-repeat center;
@@ -107,6 +127,10 @@
 
 @media screen and (max-width: 768px) {
   .testimonial_section {
+    .slide-control {
+      right: 8px;
+      -webkit-transform: none;
+    }
     .testimonial-school {
       margin-left: 8px;
       float: none;
@@ -233,7 +257,7 @@
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px) and (min-width: 769px){
   .testimonial_section {
     .play-button-href {
       margin: 32% 63%;
