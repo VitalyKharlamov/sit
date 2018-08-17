@@ -1,22 +1,36 @@
-var container = document.getElementById('counter');
-var text = $(".counter").attr("data-value");
-
 
 $(document).ready(function () {
-        var prevItem = 0;
-        for (var i = 0; i < text.length; i++) {
-            console.log(text.charAt(i));
-            var newNumber = document.createElement('div');
-            var current = text.charAt(i);
-            newNumber.innerHTML += current;
-            if (current.toString() !== ",") {
-                newNumber.classList.add('count');
-            }
-            container.appendChild(newNumber);
-        }
+        var eventsCounter = document.getElementById('eventsCounter');
+        var schoolsCounter = document.getElementById('schoolsCounter');
+
+        var eventsCount = $("#eventsCounter").attr("data-value");
+        var schoolsCount = $("#schoolsCounter").attr("data-value");
+
+        createCounters(eventsCounter, eventsCount);
+        createCounters(schoolsCounter, schoolsCount)
         runCounter()
     }
 );
+
+
+function createCounters(container, count) {
+    for (var i = 0; i < count.length; i++) {
+        console.log(count.charAt(i));
+        var current = count.charAt(i);
+        var newNumber;
+
+        if (current.toString() === ",")
+            newNumber = document.createElement('span');
+        else
+            newNumber = document.createElement('div');
+
+        newNumber.innerHTML += current;
+        if (current.toString() !== ",") {
+            newNumber.classList.add('count');
+        }
+        container.appendChild(newNumber);
+    }
+}
 
 var prev = 0;
 
