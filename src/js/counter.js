@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
         var eventsCounter = document.getElementById('eventsCounter');
         var schoolsCounter = document.getElementById('schoolsCounter');
@@ -8,14 +7,12 @@ $(document).ready(function () {
 
         createCounters(eventsCounter, eventsCount);
         createCounters(schoolsCounter, schoolsCount)
-        runCounter()
     }
 );
 
 
 function createCounters(container, count) {
     for (var i = 0; i < count.length; i++) {
-        console.log(count.charAt(i));
         var current = count.charAt(i);
         var newNumber;
 
@@ -30,6 +27,7 @@ function createCounters(container, count) {
         }
         container.appendChild(newNumber);
     }
+    runCounter();
 }
 
 var prev = 0;
@@ -44,8 +42,6 @@ function runCounter() {
 var dur = 3000;
 
 function setCounerParameters(element, value, index, previousValue) {
-    console.log("current value is " + value);
-
     if (index === 0) {
         // it's a first element
         animateValue(element, 0, value, dur);
@@ -69,9 +65,9 @@ function animateValue(element, start, end, duration) {
     var timer = setInterval(function () {
         current += increment;
         if (current > 10)
-            element[0].className = 'd' + current % 10 || 0;
+            element[0].className = 'count d' + current % 10 || 0;
         else
-            element[0].className = 'd' + current || 0;
+            element[0].className = 'count d' + current || 0;
         element[0].innerHTML = current;
         if (current == end) {
             clearInterval(timer);
@@ -79,12 +75,29 @@ function animateValue(element, start, end, duration) {
     }, stepTime);
 }
 
-//$(window).scroll(function() {
-//    var hT = $('#scroll-to').offset().top,
-//        hH = $('#scroll-to').outerHeight(),
-//        wH = $(window).height(),
-//        wS = $(this).scrollTop();
-//    if (wS > (hT+hH-wH)){
-//        console.log('H1 on the view!');
-//    }
-//});
+// detect scrolling to counter section
+$(window).scroll(function () {
+    var hT = $('#count-start').offset().top,
+        hH = $('#count-start').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+    if (wS > (hT - wH)) {
+        onCounterVisible()
+    } else {
+        onCounterInvisible()
+    }
+});
+
+var isVisible = false;
+
+// Called when counter is appears while scrolling
+function onCounterVisible() {
+    if (!isVisible) {
+        runCounter();
+        isVisible = true;
+    }
+}
+
+function onCounterInvisible() {
+    isVisible = false;
+}
