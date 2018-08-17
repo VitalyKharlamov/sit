@@ -1,10 +1,4 @@
-
-//.counter {
-//  display: flex;
-//  font-size: 30px;
-//}
-
-$digitHeight: 70px;
+$digitHeight: 32px;
 $speed: .1s;
 
 .counter {
@@ -19,11 +13,11 @@ $speed: .1s;
   font-size: $digitHeight/1.5;
   > div {
     display: inline-block;
-    width: $digitHeight/1.4;
+    width: $digitHeight/1.5;
     height: 100%;
-    margin: 0 0.1em;
-    border-radius: 8px;
-    background: #333132;
+    margin: 0 1px;
+    border-radius: 4px;
+    background: #181818;
     text-align: center;
     box-shadow: 1px 1px rgba(255, 255, 255, .05), 1px 1px 5px #111 inset;
     overflow: hidden;
@@ -40,25 +34,22 @@ $speed: .1s;
       }
     }
   }
-
   * {
     font-family: sans-serif;
   }
-
 }
-
 
 .numCounter {
   overflow: hidden;
   position: absolute;
-  width: 480px;
+  width: auto;
   height: $digitHeight;
   margin: auto;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  padding: 0.5em .1em;
+  padding: 0.2em 0.5em;
   text-align: center;
   background: #222;
   background: linear-gradient(to bottom, #555 1%, #333 4%, #1a1a1a 98%, #000 100%);
@@ -78,5 +69,4 @@ $speed: .1s;
     transform: rotatez(-5deg);
   }
 }
-
 
