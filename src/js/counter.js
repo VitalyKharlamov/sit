@@ -12,6 +12,7 @@ $(document).ready(function () {
 
 
 function createCounters(container, count) {
+    count = count.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
     for (var i = 0; i < count.length; i++) {
         var current = count.charAt(i);
         var newNumber;
@@ -31,7 +32,6 @@ function createCounters(container, count) {
 }
 
 var prev = 0;
-
 function runCounter() {
     $('.count').each(function (index) {
         setCounerParameters($(this), $(this).text(), index, prev);
