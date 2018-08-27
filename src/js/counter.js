@@ -10,7 +10,7 @@ $(document).ready(function () {
     }
 );
 
-
+var defaultValues = [];
 function createCounters(container, count) {
     count = count.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
     for (var i = 0; i < count.length; i++) {
@@ -25,6 +25,7 @@ function createCounters(container, count) {
         newNumber.innerHTML += current;
         if (current.toString() !== ",") {
             newNumber.classList.add('count');
+            defaultValues.push(current);
         }
         container.appendChild(newNumber);
     }
@@ -32,11 +33,15 @@ function createCounters(container, count) {
 }
 
 var prev = 0;
+var isRunned = false;
 function runCounter() {
+    if (isRunned) return;
+    isRunned = true;
     $('.count').each(function (index) {
-        setCounerParameters($(this), $(this).text(), index, prev);
+        setCounerParameters($(this), defaultValues[index], index, prev);
         prev = $(this).text();
     });
+    isRunned = false;
 }
 
 var dur = 3000;
